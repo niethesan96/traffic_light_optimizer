@@ -1,0 +1,529 @@
+{
+  "config": "configs/coordination.yaml",
+  "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105
+  ],
+  "duration": 3600,
+  "checkpoint_paths": {
+    "mappo": "results/mappo_coordination_10k/final.pt",
+    "independent": "results/independent_coordination_10k/checkpoints/final"
+  },
+  "episodes": {
+    "fixed_time": [
+      {
+        "seed": 101,
+        "simulated_seconds": 3600.0,
+        "completed": 1907,
+        "remaining": 114,
+        "pending": 0,
+        "avg_waiting_time": 57.37965390665968,
+        "total_waiting_time": 109423.0,
+        "avg_travel_time": 201.5972732039853,
+        "avg_sampled_queue": 33.693593314763234
+      },
+      {
+        "seed": 102,
+        "simulated_seconds": 3600.0,
+        "completed": 1884,
+        "remaining": 105,
+        "pending": 0,
+        "avg_waiting_time": 59.0567940552017,
+        "total_waiting_time": 111263.0,
+        "avg_travel_time": 203.70063694267515,
+        "avg_sampled_queue": 33.749303621169915
+      },
+      {
+        "seed": 103,
+        "simulated_seconds": 3600.0,
+        "completed": 1897,
+        "remaining": 115,
+        "pending": 0,
+        "avg_waiting_time": 58.072746441750134,
+        "total_waiting_time": 110164.0,
+        "avg_travel_time": 201.88086452293095,
+        "avg_sampled_queue": 33.78272980501393
+      },
+      {
+        "seed": 104,
+        "simulated_seconds": 3600.0,
+        "completed": 1909,
+        "remaining": 111,
+        "pending": 0,
+        "avg_waiting_time": 58.551597695128336,
+        "total_waiting_time": 111775.0,
+        "avg_travel_time": 204.12938711367207,
+        "avg_sampled_queue": 34.30362116991643
+      },
+      {
+        "seed": 105,
+        "simulated_seconds": 3600.0,
+        "completed": 1912,
+        "remaining": 108,
+        "pending": 0,
+        "avg_waiting_time": 59.40271966527197,
+        "total_waiting_time": 113578.0,
+        "avg_travel_time": 203.52510460251045,
+        "avg_sampled_queue": 34.796657381615596
+      }
+    ],
+    "mappo": [
+      {
+        "seed": 101,
+        "simulated_seconds": 3600.0,
+        "completed": 1923,
+        "remaining": 98,
+        "pending": 0,
+        "avg_waiting_time": 18.944877795111804,
+        "total_waiting_time": 36431.0,
+        "avg_travel_time": 162.17160686427457,
+        "avg_sampled_queue": 11.036211699164346
+      },
+      {
+        "seed": 102,
+        "simulated_seconds": 3600.0,
+        "completed": 1902,
+        "remaining": 87,
+        "pending": 0,
+        "avg_waiting_time": 17.742376445846478,
+        "total_waiting_time": 33746.0,
+        "avg_travel_time": 161.04837013669822,
+        "avg_sampled_queue": 9.896935933147633
+      },
+      {
+        "seed": 103,
+        "simulated_seconds": 3600.0,
+        "completed": 1923,
+        "remaining": 89,
+        "pending": 0,
+        "avg_waiting_time": 18.847633905356215,
+        "total_waiting_time": 36244.0,
+        "avg_travel_time": 161.3671346853874,
+        "avg_sampled_queue": 10.838440111420613
+      },
+      {
+        "seed": 104,
+        "simulated_seconds": 3600.0,
+        "completed": 1933,
+        "remaining": 87,
+        "pending": 0,
+        "avg_waiting_time": 17.55561303673047,
+        "total_waiting_time": 33935.0,
+        "avg_travel_time": 161.54992240041386,
+        "avg_sampled_queue": 10.016713091922005
+      },
+      {
+        "seed": 105,
+        "simulated_seconds": 3600.0,
+        "completed": 1925,
+        "remaining": 95,
+        "pending": 0,
+        "avg_waiting_time": 17.514285714285716,
+        "total_waiting_time": 33715.0,
+        "avg_travel_time": 160.05818181818182,
+        "avg_sampled_queue": 10.080779944289693
+      }
+    ],
+    "mappo_no_messages": [
+      {
+        "seed": 101,
+        "simulated_seconds": 3600.0,
+        "completed": 1925,
+        "remaining": 96,
+        "pending": 0,
+        "avg_waiting_time": 19.656103896103897,
+        "total_waiting_time": 37838.0,
+        "avg_travel_time": 162.9464935064935,
+        "avg_sampled_queue": 11.311977715877438
+      },
+      {
+        "seed": 102,
+        "simulated_seconds": 3600.0,
+        "completed": 1897,
+        "remaining": 92,
+        "pending": 0,
+        "avg_waiting_time": 18.93147074327886,
+        "total_waiting_time": 35913.0,
+        "avg_travel_time": 162.3537163943068,
+        "avg_sampled_queue": 10.56824512534819
+      },
+      {
+        "seed": 103,
+        "simulated_seconds": 3600.0,
+        "completed": 1919,
+        "remaining": 93,
+        "pending": 0,
+        "avg_waiting_time": 20.9666492965086,
+        "total_waiting_time": 40235.0,
+        "avg_travel_time": 163.94841063053673,
+        "avg_sampled_queue": 12.05849582172702
+      },
+      {
+        "seed": 104,
+        "simulated_seconds": 3600.0,
+        "completed": 1930,
+        "remaining": 90,
+        "pending": 0,
+        "avg_waiting_time": 15.72279792746114,
+        "total_waiting_time": 30345.0,
+        "avg_travel_time": 159.53316062176165,
+        "avg_sampled_queue": 8.935933147632312
+      },
+      {
+        "seed": 105,
+        "simulated_seconds": 3600.0,
+        "completed": 1927,
+        "remaining": 93,
+        "pending": 0,
+        "avg_waiting_time": 17.993772703684485,
+        "total_waiting_time": 34674.0,
+        "avg_travel_time": 160.57758173326414,
+        "avg_sampled_queue": 10.364902506963789
+      }
+    ],
+    "independent_ppo": [
+      {
+        "seed": 101,
+        "simulated_seconds": 3600.0,
+        "completed": 1940,
+        "remaining": 81,
+        "pending": 0,
+        "avg_waiting_time": 11.138659793814433,
+        "total_waiting_time": 21609.0,
+        "avg_travel_time": 152.66546391752578,
+        "avg_sampled_queue": 5.883008356545961
+      },
+      {
+        "seed": 102,
+        "simulated_seconds": 3600.0,
+        "completed": 1907,
+        "remaining": 82,
+        "pending": 0,
+        "avg_waiting_time": 11.611955951756686,
+        "total_waiting_time": 22144.0,
+        "avg_travel_time": 153.61248033560565,
+        "avg_sampled_queue": 6.030640668523677
+      },
+      {
+        "seed": 103,
+        "simulated_seconds": 3600.0,
+        "completed": 1931,
+        "remaining": 81,
+        "pending": 0,
+        "avg_waiting_time": 11.108234075608493,
+        "total_waiting_time": 21450.0,
+        "avg_travel_time": 152.16519937856035,
+        "avg_sampled_queue": 5.81058495821727
+      },
+      {
+        "seed": 104,
+        "simulated_seconds": 3600.0,
+        "completed": 1938,
+        "remaining": 82,
+        "pending": 0,
+        "avg_waiting_time": 11.399896800825593,
+        "total_waiting_time": 22093.0,
+        "avg_travel_time": 154.03973168214654,
+        "avg_sampled_queue": 5.994428969359332
+      },
+      {
+        "seed": 105,
+        "simulated_seconds": 3600.0,
+        "completed": 1933,
+        "remaining": 87,
+        "pending": 0,
+        "avg_waiting_time": 10.96792550439731,
+        "total_waiting_time": 21201.0,
+        "avg_travel_time": 152.1189860320745,
+        "avg_sampled_queue": 5.838440111420613
+      }
+    ]
+  },
+  "summary": {
+    "fixed_time": {
+      "avg_waiting_time": {
+        "mean": 58.49270235280236,
+        "std": 0.7162456882587471
+      },
+      "avg_travel_time": {
+        "mean": 202.96665327715476,
+        "std": 1.0253476368741472
+      },
+      "completed": {
+        "mean": 1901.8,
+        "std": 10.225458424931373
+      },
+      "remaining": {
+        "mean": 110.6,
+        "std": 3.7202150475476548
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 34.065181058495824,
+        "std": 0.42650815122725316
+      }
+    },
+    "mappo": {
+      "avg_waiting_time": {
+        "mean": 18.12095737946614,
+        "std": 0.6384186530943065
+      },
+      "avg_travel_time": {
+        "mean": 161.23904318099116,
+        "std": 0.6947687549022823
+      },
+      "completed": {
+        "mean": 1921.2,
+        "std": 10.283968105745952
+      },
+      "remaining": {
+        "mean": 91.2,
+        "std": 4.48998886412873
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 10.373816155988859,
+        "std": 0.4680706874500534
+      }
+    },
+    "mappo_no_messages": {
+      "avg_waiting_time": {
+        "mean": 18.654158913407397,
+        "std": 1.7582601938958238
+      },
+      "avg_travel_time": {
+        "mean": 161.87187257727254,
+        "std": 1.6027324350571828
+      },
+      "completed": {
+        "mean": 1919.6,
+        "std": 11.859173664298876
+      },
+      "remaining": {
+        "mean": 92.8,
+        "std": 1.9390719429665317
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 10.647910863509749,
+        "std": 1.0438431652441804
+      }
+    },
+    "independent_ppo": {
+      "avg_waiting_time": {
+        "mean": 11.245334425280504,
+        "std": 0.23040510579154022
+      },
+      "avg_travel_time": {
+        "mean": 152.92037226918256,
+        "std": 0.7758174185335455
+      },
+      "completed": {
+        "mean": 1929.8,
+        "std": 11.855800268223144
+      },
+      "remaining": {
+        "mean": 82.6,
+        "std": 2.244994432064365
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 5.911420612813371,
+        "std": 0.08649282983877606
+      }
+    }
+  },
+  "scenario": {
+    "paths": {
+      "data_dir": "data/coordination",
+      "network_dir": "data/coordination/network",
+      "demand_dir": "data/coordination/demand",
+      "output_dir": "results/coordination"
+    },
+    "sumo": {
+      "sumo_home": null,
+      "use_gui": false,
+      "step_length": 1,
+      "decision_interval": 10,
+      "seed": 42,
+      "tls_type": "static",
+      "end_time": 3600
+    },
+    "network": {
+      "name": "grid_coordination",
+      "grid": {
+        "rows": 3,
+        "cols": 3
+      },
+      "block_length": 300,
+      "lanes_per_direction": 3,
+      "speed_limit": 8.33,
+      "edge_type": "normal",
+      "bidi": true,
+      "boundary_ring": true,
+      "observation_lanes": 3
+    },
+    "demand": {
+      "duration": 3600,
+      "seed": 42,
+      "vehicle_types": {
+        "passenger": {
+          "probability": 1.0,
+          "speed_factor": 1.0
+        }
+      },
+      "flow_rate": 2000,
+      "demand_level": "custom",
+      "demand_presets": {
+        "low": 50,
+        "medium": 100,
+        "high": 200
+      },
+      "demand_type": "network_wide",
+      "depart_position": "random_free",
+      "depart_speed": "max",
+      "min_gap": 2.5
+    },
+    "reward_weights": {
+      "waiting_weight": 1.0,
+      "queue_weight": 1.0,
+      "reward_scale": 0.02,
+      "reward_clip": 10.0
+    },
+    "signals": {
+      "cycle_length": 90,
+      "yellow_time": 3,
+      "all_red_time": 1,
+      "phases": [
+        {
+          "name": "NS_green",
+          "duration": 41,
+          "signal_state": "GGGrrr"
+        },
+        {
+          "name": "NS_yellow",
+          "duration": 3,
+          "signal_state": "yyyrrr"
+        },
+        {
+          "name": "all_red_1",
+          "duration": 1,
+          "signal_state": "rrrrrr"
+        },
+        {
+          "name": "EW_green",
+          "duration": 41,
+          "signal_state": "rrrGGG"
+        },
+        {
+          "name": "EW_yellow",
+          "duration": 3,
+          "signal_state": "rrryyy"
+        },
+        {
+          "name": "all_red_2",
+          "duration": 1,
+          "signal_state": "rrrrrr"
+        }
+      ]
+    },
+    "ppo": {
+      "learning_rate": 0.0003,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "clip_epsilon": 0.2,
+      "entropy_coefficient": 0.01,
+      "value_loss_coefficient": 0.5,
+      "max_grad_norm": 0.5,
+      "update_epochs": 8,
+      "minibatch_size": 64,
+      "rollout_steps": 360,
+      "target_kl": 0.015,
+      "hidden_size": 64,
+      "seed": 42
+    },
+    "training": {
+      "total_timesteps": 500,
+      "checkpoint_interval": 100,
+      "evaluation_interval": 1000,
+      "output_dir": "results/independent_ppo_nw"
+    },
+    "evaluation": {
+      "num_episodes": 10,
+      "episode_length": 3600,
+      "metrics": [
+        "average_waiting_time",
+        "average_travel_time",
+        "average_queue_length",
+        "throughput",
+        "network_efficiency"
+      ],
+      "save_plots": true,
+      "save_csv": true,
+      "plot_dpi": 150
+    }
+  },
+  "mappo_joint_training_decisions": 10000,
+  "reused_fixed_time": "results/coordination_fixed_validation.json",
+  "file_sha256": {
+    "configs\\coordination.yaml": "5c1feac76c445c018344e3fbd3b59f0e3484ac46a3fce30e70cb62e3de9fa9fe",
+    "results\\mappo_coordination_10k\\final.pt": "181518aa3938e255f35e3836e3f079b6a2a8b4728985125b35c74dd126ad0bc3",
+    "results\\independent_coordination_10k\\checkpoints\\final\\agent_1_1.pt": "163f330abc020ff1e63eb05aeb9b496f23308aff91d85a86c301adc568b4b08b",
+    "results\\independent_coordination_10k\\checkpoints\\final\\agent_1_2.pt": "0ef7fba2b084000d164a8bbe7aaf8f6fd1ef230289c49f169edd03644ba836df",
+    "results\\independent_coordination_10k\\checkpoints\\final\\agent_1_3.pt": "6e46d494c39e3b265b0c96a8ecfe9f70fe27785557ec51cba87ef31f2240807e",
+    "results\\independent_coordination_10k\\checkpoints\\final\\agent_2_1.pt": "3033a08524b83a0c4486fb2fb7f1522bb590e25d701a53bf0bc5dc2ea5c39307",
+    "results\\independent_coordination_10k\\checkpoints\\final\\agent_2_2.pt": "a5f10240cfb5503f0f388eec5e01354c388051f4bbb85054c6c93b86f2bc3b75",
+    "results\\independent_coordination_10k\\checkpoints\\final\\agent_2_3.pt": "d685b92d39c06a0b28fe496e3d6ec7c1866285f727ed227a14d509a746174d9d",
+    "results\\independent_coordination_10k\\checkpoints\\final\\agent_3_1.pt": "c085b93c036155bd2050190f91740a99e59bc26558856eeba1e0041328e0532c",
+    "results\\independent_coordination_10k\\checkpoints\\final\\agent_3_2.pt": "f8ffc586de269d13169d2f98641ac47d6ffec4413d35d5dddcd73ad462c20240",
+    "results\\independent_coordination_10k\\checkpoints\\final\\agent_3_3.pt": "8da7926e68464c9ab3ef0d6f2db9e4d7f5e21bfd8d87b331ef37ea318c406c65",
+    "results\\independent_coordination_10k\\checkpoints\\final\\metadata.json": "5c4d5a3b64dcf2682f3db390e1c4f177ee33182f844999ca7c5e9d321fd64a70"
+  },
+  "paired_waiting_reduction_percent": {
+    "fixed_time": {
+      "mean": 69.003607164198,
+      "per_seed": [
+        66.98328326286229,
+        69.95709514935355,
+        67.54478639259582,
+        70.01685055950037,
+        70.51602045667799
+      ],
+      "ci95_across_demand_seeds": [
+        67.70229734813663,
+        70.20456743634206
+      ],
+      "interval_method": "percentile bootstrap over demand seeds"
+    },
+    "independent_ppo": {
+      "mean": -61.2466563215749,
+      "per_seed": [
+        -70.08220150176732,
+        -52.794038485500515,
+        -69.6726390267732,
+        -53.997999661357234,
+        -59.686402932476234
+      ],
+      "ci95_across_demand_seeds": [
+        -67.83921679791146,
+        -54.65409584523835
+      ],
+      "interval_method": "percentile bootstrap over demand seeds"
+    }
+  }
+}

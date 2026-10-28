@@ -1,0 +1,21 @@
+{
+  "config": "configs/cooperative.yaml",
+  "iterations": 2,
+  "batch_size": 32,
+  "seed": 42,
+  "episode_duration": 120,
+  "output": "results/rllib_smoke",
+  "ray_version": "2.59.0",
+  "agent_names": [
+    "agent_1_1",
+    "agent_1_2",
+    "agent_1_3",
+    "agent_2_1",
+    "agent_2_2",
+    "agent_2_3",
+    "agent_3_1",
+    "agent_3_2",
+    "agent_3_3"
+  ],
+  "local_dim": 50
+}

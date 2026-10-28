@@ -1,0 +1,94 @@
+{
+  "num_episodes": 1,
+  "episode_duration": 3600,
+  "seed": 42,
+  "network_level": {
+    "avg_waiting_time": 368.48837209302326,
+    "std_waiting_time": 0.0,
+    "total_waiting_time": 285210.0,
+    "avg_travel_time": 814.6382428940568,
+    "std_travel_time": 0.0,
+    "avg_throughput": 774.0,
+    "min_throughput": 774,
+    "max_throughput": 774
+  },
+  "per_agent": {
+    "agent_1_1": {
+      "mean_reward": -62.0,
+      "std_reward": 0.0,
+      "mean_episode_length": 359.0
+    },
+    "agent_1_2": {
+      "mean_reward": -290.0,
+      "std_reward": 0.0,
+      "mean_episode_length": 359.0
+    },
+    "agent_1_3": {
+      "mean_reward": -278.0,
+      "std_reward": 0.0,
+      "mean_episode_length": 359.0
+    },
+    "agent_2_1": {
+      "mean_reward": -321.0,
+      "std_reward": 0.0,
+      "mean_episode_length": 359.0
+    },
+    "agent_2_2": {
+      "mean_reward": -210.0,
+      "std_reward": 0.0,
+      "mean_episode_length": 359.0
+    },
+    "agent_2_3": {
+      "mean_reward": -284.0,
+      "std_reward": 0.0,
+      "mean_episode_length": 359.0
+    },
+    "agent_3_1": {
+      "mean_reward": -165.0,
+      "std_reward": 0.0,
+      "mean_episode_length": 359.0
+    },
+    "agent_3_2": {
+      "mean_reward": -247.0,
+      "std_reward": 0.0,
+      "mean_episode_length": 359.0
+    },
+    "agent_3_3": {
+      "mean_reward": -175.0,
+      "std_reward": 0.0,
+      "mean_episode_length": 359.0
+    }
+  },
+  "per_episode": [
+    {
+      "avg_waiting_time": 368.48837209302326,
+      "total_waiting_time": 285210.0,
+      "avg_travel_time": 814.6382428940568,
+      "throughput": 774,
+      "vehicles_entered": 0,
+      "episode": 0,
+      "episode_rewards": {
+        "agent_1_1": -62.0,
+        "agent_1_2": -290.0,
+        "agent_1_3": -278.0,
+        "agent_2_1": -321.0,
+        "agent_2_2": -210.0,
+        "agent_2_3": -284.0,
+        "agent_3_1": -165.0,
+        "agent_3_2": -247.0,
+        "agent_3_3": -175.0
+      },
+      "episode_lengths": {
+        "agent_1_1": 359,
+        "agent_1_2": 359,
+        "agent_1_3": 359,
+        "agent_2_1": 359,
+        "agent_2_2": 359,
+        "agent_2_3": 359,
+        "agent_3_1": 359,
+        "agent_3_2": 359,
+        "agent_3_3": 359
+      }
+    }
+  ]
+}

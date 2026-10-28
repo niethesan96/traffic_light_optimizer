@@ -1,0 +1,98 @@
+{
+  "network_level": {
+    "total_waiting_time": 41490.0,
+    "avg_waiting_time": 18.11,
+    "avg_queue_length": 11.7278,
+    "max_queue_length": 21,
+    "avg_travel_time": 46.1807,
+    "throughput": 2291,
+    "vehicles_entered": 2323,
+    "vehicles_remaining": 32,
+    "teleports": 1120,
+    "simulation_duration": 3.9193,
+    "sim_end_time": 3600
+  },
+  "per_intersection": {
+    "N_1_1": {
+      "intersection_id": "N_1_1",
+      "avg_queue_length": 2.9444,
+      "max_queue_length": 8,
+      "avg_waiting_time": 6.3117,
+      "avg_vehicle_count": 7.4056,
+      "avg_speed": 2.239
+    },
+    "N_1_2": {
+      "intersection_id": "N_1_2",
+      "avg_queue_length": 3.0333,
+      "max_queue_length": 7,
+      "avg_waiting_time": 6.3117,
+      "avg_vehicle_count": 7.5833,
+      "avg_speed": 2.2341
+    },
+    "N_1_3": {
+      "intersection_id": "N_1_3",
+      "avg_queue_length": 0.0,
+      "max_queue_length": 0,
+      "avg_waiting_time": 6.3117,
+      "avg_vehicle_count": 0.0,
+      "avg_speed": 0.0
+    },
+    "N_2_1": {
+      "intersection_id": "N_2_1",
+      "avg_queue_length": 2.7944,
+      "max_queue_length": 7,
+      "avg_waiting_time": 6.3117,
+      "avg_vehicle_count": 7.3028,
+      "avg_speed": 2.2852
+    },
+    "N_2_2": {
+      "intersection_id": "N_2_2",
+      "avg_queue_length": 2.9556,
+      "max_queue_length": 9,
+      "avg_waiting_time": 6.3117,
+      "avg_vehicle_count": 7.4889,
+      "avg_speed": 2.1893
+    },
+    "N_2_3": {
+      "intersection_id": "N_2_3",
+      "avg_queue_length": 0.0,
+      "max_queue_length": 0,
+      "avg_waiting_time": 6.3117,
+      "avg_vehicle_count": 0.0,
+      "avg_speed": 0.0
+    },
+    "N_3_1": {
+      "intersection_id": "N_3_1",
+      "avg_queue_length": 0.0,
+      "max_queue_length": 0,
+      "avg_waiting_time": 6.3117,
+      "avg_vehicle_count": 0.0,
+      "avg_speed": 0.0
+    },
+    "N_3_2": {
+      "intersection_id": "N_3_2",
+      "avg_queue_length": 0.0,
+      "max_queue_length": 0,
+      "avg_waiting_time": 6.3117,
+      "avg_vehicle_count": 0.0,
+      "avg_speed": 0.0
+    },
+    "N_3_3": {
+      "intersection_id": "N_3_3",
+      "avg_queue_length": 0.0,
+      "max_queue_length": 0,
+      "avg_waiting_time": 6.3117,
+      "avg_vehicle_count": 0.0,
+      "avg_speed": 0.0
+    }
+  },
+  "config": {
+    "config_path": "configs/default.yaml",
+    "duration": 3600,
+    "step_length": 10,
+    "seed": 42,
+    "tls_type": "static",
+    "demand_level": "medium",
+    "flow_rate": 300
+  }
+}

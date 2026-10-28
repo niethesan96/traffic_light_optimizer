@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<routes>
+  <vType id="passenger" accel="2.6" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="50" />
+  <flow id="flow_0" type="passenger" from="E_0_1_to_1_1" to="E_3_1_to_2_1" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_1" type="passenger" from="E_0_1_to_1_1" to="E_3_2_to_2_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_2" type="passenger" from="E_0_1_to_1_1" to="E_3_3_to_2_3" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_3" type="passenger" from="E_0_1_to_1_1" to="E_1_3_to_1_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_4" type="passenger" from="E_0_1_to_1_1" to="E_2_3_to_2_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_5" type="passenger" from="E_0_1_to_1_1" to="E_3_3_to_3_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_6" type="passenger" from="E_0_2_to_1_2" to="E_3_1_to_2_1" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_7" type="passenger" from="E_0_2_to_1_2" to="E_3_2_to_2_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_8" type="passenger" from="E_0_2_to_1_2" to="E_3_3_to_2_3" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_9" type="passenger" from="E_0_2_to_1_2" to="E_1_3_to_1_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_10" type="passenger" from="E_0_2_to_1_2" to="E_2_3_to_2_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_11" type="passenger" from="E_0_2_to_1_2" to="E_3_3_to_3_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_12" type="passenger" from="E_0_3_to_1_3" to="E_3_1_to_2_1" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_13" type="passenger" from="E_0_3_to_1_3" to="E_3_2_to_2_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_14" type="passenger" from="E_0_3_to_1_3" to="E_3_3_to_2_3" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_15" type="passenger" from="E_0_3_to_1_3" to="E_1_3_to_1_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_16" type="passenger" from="E_0_3_to_1_3" to="E_2_3_to_2_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_17" type="passenger" from="E_0_3_to_1_3" to="E_3_3_to_3_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_18" type="passenger" from="E_1_0_to_1_1" to="E_3_1_to_2_1" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_19" type="passenger" from="E_1_0_to_1_1" to="E_3_2_to_2_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_20" type="passenger" from="E_1_0_to_1_1" to="E_3_3_to_2_3" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_21" type="passenger" from="E_1_0_to_1_1" to="E_1_3_to_1_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_22" type="passenger" from="E_1_0_to_1_1" to="E_2_3_to_2_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_23" type="passenger" from="E_1_0_to_1_1" to="E_3_3_to_3_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_24" type="passenger" from="E_2_0_to_2_1" to="E_3_1_to_2_1" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_25" type="passenger" from="E_2_0_to_2_1" to="E_3_2_to_2_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_26" type="passenger" from="E_2_0_to_2_1" to="E_3_3_to_2_3" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_27" type="passenger" from="E_2_0_to_2_1" to="E_1_3_to_1_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_28" type="passenger" from="E_2_0_to_2_1" to="E_2_3_to_2_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_29" type="passenger" from="E_2_0_to_2_1" to="E_3_3_to_3_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_30" type="passenger" from="E_3_0_to_3_1" to="E_3_1_to_2_1" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_31" type="passenger" from="E_3_0_to_3_1" to="E_3_2_to_2_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_32" type="passenger" from="E_3_0_to_3_1" to="E_3_3_to_2_3" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_33" type="passenger" from="E_3_0_to_3_1" to="E_1_3_to_1_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_34" type="passenger" from="E_3_0_to_3_1" to="E_2_3_to_2_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_35" type="passenger" from="E_3_0_to_3_1" to="E_3_3_to_3_2" vehsPerHour="27.777778" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+</routes>

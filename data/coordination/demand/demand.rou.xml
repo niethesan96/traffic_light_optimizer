@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<routes>
+  <vType id="passenger" accel="2.6" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="50" />
+  <flow id="flow_0" type="passenger" from="E_0_1_to_1_1" to="E_3_1_to_4_1" vehsPerHour="171.314227" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_1" type="passenger" from="E_4_1_to_3_1" to="E_1_1_to_0_1" vehsPerHour="150.833692" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_2" type="passenger" from="E_0_2_to_1_2" to="E_3_2_to_4_2" vehsPerHour="159.167644" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_3" type="passenger" from="E_4_2_to_3_2" to="E_1_2_to_0_2" vehsPerHour="157.440358" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_4" type="passenger" from="E_0_3_to_1_3" to="E_3_3_to_4_3" vehsPerHour="174.549040" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_5" type="passenger" from="E_4_3_to_3_3" to="E_1_3_to_0_3" vehsPerHour="172.556650" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_6" type="passenger" from="E_1_0_to_1_1" to="E_1_3_to_1_4" vehsPerHour="179.739319" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_7" type="passenger" from="E_1_4_to_1_3" to="E_1_1_to_1_0" vehsPerHour="152.897961" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_8" type="passenger" from="E_2_0_to_2_1" to="E_2_3_to_2_4" vehsPerHour="164.064061" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_9" type="passenger" from="E_2_4_to_2_3" to="E_2_1_to_2_0" vehsPerHour="150.993241" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_10" type="passenger" from="E_3_0_to_3_1" to="E_3_3_to_3_4" vehsPerHour="157.287932" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+  <flow id="flow_11" type="passenger" from="E_3_4_to_3_3" to="E_3_1_to_3_0" vehsPerHour="166.845176" begin="0" end="3600" departPos="random_free" departSpeed="max" />
+</routes>

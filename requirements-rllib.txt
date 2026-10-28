@@ -1,0 +1,3 @@
+-r requirements.txt
+ray[rllib]==2.59.0
+pyarrow==23.0.0

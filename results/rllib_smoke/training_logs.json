@@ -1,0 +1,359 @@
+[
+  {
+    "iteration": 1,
+    "env_runners": {
+      "agent_episode_returns_mean": {
+        "agent_2_2": -0.7916666666666669,
+        "agent_1_1": -0.9416666666666669,
+        "agent_3_1": -0.9041666666666667,
+        "agent_1_3": -0.9791666666666669,
+        "agent_2_3": -1.0541666666666667,
+        "agent_3_3": -0.9791666666666667,
+        "agent_2_1": -1.0916666666666668,
+        "agent_3_2": -1.054166666666667,
+        "agent_1_2": -0.45416666666666666
+      },
+      "agent_steps": {
+        "agent_1_3": 11.0,
+        "agent_3_3": 11.0,
+        "agent_2_1": 11.0,
+        "agent_3_2": 11.0,
+        "agent_2_3": 11.0,
+        "agent_1_2": 11.0,
+        "agent_2_2": 11.0,
+        "agent_1_1": 11.0,
+        "agent_3_1": 11.0
+      },
+      "episode_len_mean": 11.0,
+      "module_to_env_connector": {
+        "connector_pipeline_timer": 0.0075248495131631545,
+        "timers": {
+          "connectors": {
+            "normalize_and_clip_actions": 0.0014656991446846182,
+            "un_batch_to_individual_items": 0.0011978934124349506,
+            "get_actions": 0.0031448801618090085,
+            "module_to_agent_unmapping": 4.9981467424305914e-05,
+            "remove_single_ts_time_rank_from_batch": 1.3623518696865214e-05,
+            "listify_data_for_vector_env": 0.00017575736743276034,
+            "tensor_to_numpy": 0.0004405900441717153
+          }
+        }
+      },
+      "env_to_module_connector": {
+        "timers": {
+          "connectors": {
+            "add_observations_from_episodes_to_batch": 0.0003781800482558727,
+            "add_time_dim_to_batch_and_zero_pad": 3.9382514720739836e-05,
+            "batch_individual_items": 0.00018313941420471192,
+            "numpy_to_tensor": 0.0002727117315023888,
+            "agent_to_module_mapping": 0.0003096418158296681,
+            "add_states_from_episodes_to_batch": 2.8069734255141655e-05
+          }
+        },
+        "connector_pipeline_timer": 0.0020621702237444304
+      },
+      "num_agent_steps_sampled": {
+        "agent_3_1": "32",
+        "agent_1_3": "32",
+        "agent_3_3": "32",
+        "agent_2_1": "32",
+        "agent_3_2": "32",
+        "agent_2_3": "32",
+        "agent_1_2": "32",
+        "agent_1_1": "32",
+        "agent_2_2": "32"
+      },
+      "episode_len_max": "11",
+      "num_agent_steps_sampled_lifetime": {
+        "agent_1_3": 32.0,
+        "agent_3_3": 32.0,
+        "agent_2_1": 32.0,
+        "agent_3_2": 32.0,
+        "agent_2_3": 32.0,
+        "agent_1_2": 32.0,
+        "agent_1_1": 32.0,
+        "agent_2_2": 32.0,
+        "agent_3_1": 32.0
+      },
+      "timers": {
+        "connectors": {
+          "add_observations_from_episodes_to_batch": 0.0005243000050541013,
+          "add_time_dim_to_batch_and_zero_pad": 3.6900019040331244e-05,
+          "batch_individual_items": 9.180000051856041e-05,
+          "agent_to_module_mapping": 0.00024209998082369566,
+          "numpy_to_tensor": 0.00024049999774433672,
+          "add_states_from_episodes_to_batch": 1.680001150816679e-05
+        }
+      },
+      "weights_seq_no": 0.0,
+      "num_module_steps_sampled": {
+        "shared": "288"
+      },
+      "episode_return_min": -9.3,
+      "module_episode_returns_mean": {
+        "shared": -8.25
+      },
+      "num_episodes_lifetime": 2.0,
+      "episode_return_mean": -8.25,
+      "num_env_steps_sampled_lifetime": 32.0,
+      "num_env_steps_sampled": "32",
+      "env_step_timer": 0.01834614912317305,
+      "rlmodule_inference_timer": 0.028788991877355296,
+      "num_module_steps_sampled_lifetime": {
+        "shared": 288.0
+      },
+      "episode_return_max": -7.200000000000001,
+      "num_episodes": "2",
+      "episode_len_min": "11",
+      "episode_duration_sec_mean": 0.39607175000128336,
+      "connector_pipeline_timer": 0.0025209999876096845,
+      "env_to_module_sum_episodes_length_out": 1.4264151756161463,
+      "env_to_module_sum_episodes_length_in": 1.4264151756161463,
+      "env_reset_timer": 0.4005849999957718,
+      "sample": 2.4223239999846555,
+      "num_env_steps_sampled_lifetime_throughput": {
+        "throughput_since_last_reduce": 1.6422930870329342,
+        "throughput_since_last_restore": 1.6422923284655628
+      }
+    },
+    "learners": {
+      "__all_modules__": {
+        "learner_connector_sum_episodes_length_out": 32.0,
+        "learner_connector_sum_episodes_length_in": 32.0,
+        "num_trainable_parameters": 58123.0,
+        "learner_connector": {
+          "timers": {
+            "connectors": {
+              "batch_individual_items": 0.0019003000052180141,
+              "add_one_ts_to_episodes_and_truncate": 0.008364300010725856,
+              "add_observations_from_episodes_to_batch": 0.0006271000020205975,
+              "add_states_from_episodes_to_batch": 2.169999061152339e-05,
+              "agent_to_module_mapping": 0.001121300010709092,
+              "add_time_dim_to_batch_and_zero_pad": 3.37999954354018e-05,
+              "add_columns_from_episodes_to_train_batch": 0.0028033999842591584,
+              "general_advantage_estimation": 0.04026959999464452,
+              "numpy_to_tensor": 0.0007708999910391867
+            }
+          },
+          "connector_pipeline_timer": 0.05778550001559779
+        },
+        "num_non_trainable_parameters": 0.0,
+        "num_env_steps_trained": "1280",
+        "num_env_steps_trained_lifetime": 1280.0,
+        "num_module_steps_trained": "1280",
+        "num_module_steps_trained_lifetime": 1280.0,
+        "num_env_steps_trained_throughput": 65.68926918777798,
+        "num_env_steps_trained_lifetime_throughput": {
+          "throughput_since_last_reduce": 65.62747138063287,
+          "throughput_since_last_restore": 65.62744614452322
+        },
+        "num_module_steps_trained_throughput": 65.62725636949861,
+        "num_module_steps_trained_lifetime_throughput": {
+          "throughput_since_last_reduce": 65.62705313656807,
+          "throughput_since_last_restore": 65.6270396774722
+        }
+      },
+      "shared": {
+        "num_module_steps_trained": "1280",
+        "vf_explained_var": -0.4623955488204956,
+        "entropy": 0.6902938485145569,
+        "module_train_batch_size_mean": 32.0,
+        "vf_loss_unclipped": 0.19177578389644623,
+        "policy_loss": 0.2943592667579651,
+        "num_module_steps_trained_lifetime": 1280.0,
+        "diff_num_grad_updates_vs_sampler_policy": 1.0,
+        "num_trainable_parameters": 58123.0,
+        "curr_entropy_coeff": 0.005,
+        "curr_kl_coeff": 0.10000000149011612,
+        "default_optimizer_learning_rate": 0.0003,
+        "total_loss": 0.48346516489982605,
+        "weights_seq_no": 1.0,
+        "vf_loss": 0.19177578389644623,
+        "mean_kl_loss": 0.0039078849367797375,
+        "num_module_steps_trained_lifetime_throughput": {
+          "throughput_since_last_reduce": 65.62602723318221,
+          "throughput_since_last_restore": 65.62601276509939
+        }
+      }
+    }
+  },
+  {
+    "iteration": 2,
+    "env_runners": {
+      "agent_episode_returns_mean": {
+        "agent_2_2": -1.0935185185185186,
+        "agent_1_1": -1.0935185185185188,
+        "agent_3_1": -0.9685185185185187,
+        "agent_1_3": -1.1935185185185186,
+        "agent_2_3": -0.7685185185185186,
+        "agent_3_3": -0.8935185185185186,
+        "agent_2_1": -0.9685185185185187,
+        "agent_3_2": -1.1185185185185185,
+        "agent_1_2": -0.6685185185185185
+      },
+      "agent_steps": {
+        "agent_1_3": 11.333333333333334,
+        "agent_3_3": 11.333333333333334,
+        "agent_2_1": 11.333333333333334,
+        "agent_3_2": 11.333333333333334,
+        "agent_2_3": 11.333333333333334,
+        "agent_1_2": 11.333333333333334,
+        "agent_2_2": 11.333333333333334,
+        "agent_1_1": 11.333333333333334,
+        "agent_3_1": 11.333333333333334
+      },
+      "episode_len_mean": 11.0,
+      "module_to_env_connector": {
+        "connector_pipeline_timer": 0.00648500638601775,
+        "timers": {
+          "connectors": {
+            "normalize_and_clip_actions": 0.0012516957181219477,
+            "un_batch_to_individual_items": 0.0010080733082094382,
+            "get_actions": 0.0026034049719643898,
+            "module_to_agent_unmapping": 4.3106639688846724e-05,
+            "remove_single_ts_time_rank_from_batch": 1.3118225408145845e-05,
+            "listify_data_for_vector_env": 0.00018282425217089885,
+            "tensor_to_numpy": 0.0004160977195965727
+          }
+        }
+      },
+      "env_to_module_connector": {
+        "timers": {
+          "connectors": {
+            "add_observations_from_episodes_to_batch": 0.00036211062150289273,
+            "add_time_dim_to_batch_and_zero_pad": 3.72911553919197e-05,
+            "batch_individual_items": 0.00015451735763857613,
+            "numpy_to_tensor": 0.0002645433244290811,
+            "agent_to_module_mapping": 0.0002957626800947564,
+            "add_states_from_episodes_to_batch": 2.638834641262979e-05
+          }
+        },
+        "connector_pipeline_timer": 0.0019240276063650207
+      },
+      "num_agent_steps_sampled": {
+        "agent_3_1": "32",
+        "agent_1_3": "32",
+        "agent_3_3": "32",
+        "agent_2_1": "32",
+        "agent_3_2": "32",
+        "agent_2_3": "32",
+        "agent_1_2": "32",
+        "agent_1_1": "32",
+        "agent_2_2": "32"
+      },
+      "episode_len_max": "11",
+      "num_agent_steps_sampled_lifetime": {
+        "agent_1_3": 64.0,
+        "agent_3_3": 64.0,
+        "agent_2_1": 64.0,
+        "agent_3_2": 64.0,
+        "agent_2_3": 64.0,
+        "agent_1_2": 64.0,
+        "agent_1_1": 64.0,
+        "agent_2_2": 64.0,
+        "agent_3_1": 64.0
+      },
+      "timers": {
+        "connectors": {
+          "add_observations_from_episodes_to_batch": 0.0005243000050541013,
+          "add_time_dim_to_batch_and_zero_pad": 3.6900019040331244e-05,
+          "batch_individual_items": 9.180000051856041e-05,
+          "agent_to_module_mapping": 0.00024209998082369566,
+          "numpy_to_tensor": 0.00024049999774433672,
+          "add_states_from_episodes_to_batch": 1.680001150816679e-05
+        }
+      },
+      "weights_seq_no": 1.0,
+      "num_module_steps_sampled": {
+        "shared": "288"
+      },
+      "episode_return_min": -9.700000000000003,
+      "module_episode_returns_mean": {
+        "shared": -8.766666666666667
+      },
+      "num_episodes_lifetime": 5.0,
+      "episode_return_mean": -8.766666666666667,
+      "num_env_steps_sampled_lifetime": 64.0,
+      "num_env_steps_sampled": "32",
+      "env_step_timer": 0.029585639253681167,
+      "rlmodule_inference_timer": 0.021542854805530934,
+      "num_module_steps_sampled_lifetime": {
+        "shared": 576.0
+      },
+      "episode_return_max": -7.400000000000001,
+      "num_episodes": "3",
+      "episode_len_min": "11",
+      "episode_duration_sec_mean": 0.39784456667257473,
+      "connector_pipeline_timer": 0.0025209999876096845,
+      "env_to_module_sum_episodes_length_out": 2.343221776102761,
+      "env_to_module_sum_episodes_length_in": 2.343221776102761,
+      "env_reset_timer": 0.4005849999957718,
+      "sample": 2.4223543419849007,
+      "time_between_sampling": 2.3811392999778036,
+      "num_env_steps_sampled_lifetime_throughput": {
+        "throughput_since_last_reduce": 8.712250194298367,
+        "throughput_since_last_restore": 2.759990537200685
+      }
+    },
+    "learners": {
+      "__all_modules__": {
+        "learner_connector_sum_episodes_length_out": 32.0,
+        "learner_connector_sum_episodes_length_in": 32.0,
+        "num_trainable_parameters": NaN,
+        "learner_connector": {
+          "timers": {
+            "connectors": {
+              "batch_individual_items": 0.001894853005069308,
+              "add_one_ts_to_episodes_and_truncate": 0.008342617010639514,
+              "add_observations_from_episodes_to_batch": 0.0006250320019898936,
+              "add_states_from_episodes_to_batch": 2.158099057851359e-05,
+              "agent_to_module_mapping": 0.0011171600106172264,
+              "add_time_dim_to_batch_and_zero_pad": 3.3699995547067375e-05,
+              "add_columns_from_episodes_to_train_batch": 0.0027917379842256193,
+              "general_advantage_estimation": 0.039913210994564,
+              "numpy_to_tensor": 0.0007683899911353365
+            }
+          },
+          "connector_pipeline_timer": 0.0573696750155068
+        },
+        "num_non_trainable_parameters": NaN,
+        "num_env_steps_trained": "1312",
+        "num_env_steps_trained_lifetime": 2592.0,
+        "num_module_steps_trained": "1312",
+        "num_module_steps_trained_lifetime": 2592.0,
+        "num_env_steps_trained_throughput": 357.4224728986793,
+        "num_env_steps_trained_lifetime_throughput": {
+          "throughput_since_last_reduce": 357.39321529287565,
+          "throughput_since_last_restore": 111.7745352382399
+        },
+        "num_module_steps_trained_throughput": 357.3886007217234,
+        "num_module_steps_trained_lifetime_throughput": {
+          "throughput_since_last_reduce": 357.36957903569305,
+          "throughput_since_last_restore": 111.77320154870507
+        }
+      },
+      "shared": {
+        "num_module_steps_trained": "1312",
+        "vf_explained_var": -0.1659175157546997,
+        "entropy": 0.6725934743881226,
+        "module_train_batch_size_mean": 32.0,
+        "vf_loss_unclipped": 0.11684715002775192,
+        "policy_loss": -0.09454523772001266,
+        "num_module_steps_trained_lifetime": 2592.0,
+        "diff_num_grad_updates_vs_sampler_policy": 1.0,
+        "num_trainable_parameters": NaN,
+        "curr_entropy_coeff": 0.005,
+        "curr_kl_coeff": 0.10000000149011612,
+        "default_optimizer_learning_rate": 0.0003,
+        "total_loss": 0.020473957061767578,
+        "weights_seq_no": 2.0,
+        "vf_loss": 0.11684715002775192,
+        "mean_kl_loss": 0.015350420959293842,
+        "num_module_steps_trained_lifetime_throughput": {
+          "throughput_since_last_reduce": 357.44480147636784,
+          "throughput_since_last_restore": 111.77157484726146
+        }
+      }
+    }
+  }
+]

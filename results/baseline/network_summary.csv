@@ -1,0 +1,2 @@
+total_waiting_time,avg_waiting_time,avg_queue_length,max_queue_length,avg_travel_time,throughput,vehicles_entered,vehicles_remaining,teleports,simulation_duration,sim_end_time
+41490.0,18.11,11.7278,21,46.1807,2291,2323,32,1120,3.9193,3600

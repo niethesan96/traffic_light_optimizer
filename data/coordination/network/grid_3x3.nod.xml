@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<nodes>
+  <node id="N_0_0" x="0.00" y="0.00" type="priority" />
+  <node id="N_0_1" x="300.00" y="0.00" type="priority" />
+  <node id="N_0_2" x="600.00" y="0.00" type="priority" />
+  <node id="N_0_3" x="900.00" y="0.00" type="priority" />
+  <node id="N_0_4" x="1200.00" y="0.00" type="priority" />
+  <node id="N_1_0" x="0.00" y="300.00" type="priority" />
+  <node id="N_1_1" x="300.00" y="300.00" type="traffic_light" name="I_1_1" />
+  <node id="N_1_2" x="600.00" y="300.00" type="traffic_light" name="I_1_2" />
+  <node id="N_1_3" x="900.00" y="300.00" type="traffic_light" name="I_1_3" />
+  <node id="N_1_4" x="1200.00" y="300.00" type="priority" />
+  <node id="N_2_0" x="0.00" y="600.00" type="priority" />
+  <node id="N_2_1" x="300.00" y="600.00" type="traffic_light" name="I_2_1" />
+  <node id="N_2_2" x="600.00" y="600.00" type="traffic_light" name="I_2_2" />
+  <node id="N_2_3" x="900.00" y="600.00" type="traffic_light" name="I_2_3" />
+  <node id="N_2_4" x="1200.00" y="600.00" type="priority" />
+  <node id="N_3_0" x="0.00" y="900.00" type="priority" />
+  <node id="N_3_1" x="300.00" y="900.00" type="traffic_light" name="I_3_1" />
+  <node id="N_3_2" x="600.00" y="900.00" type="traffic_light" name="I_3_2" />
+  <node id="N_3_3" x="900.00" y="900.00" type="traffic_light" name="I_3_3" />
+  <node id="N_3_4" x="1200.00" y="900.00" type="priority" />
+  <node id="N_4_0" x="0.00" y="1200.00" type="priority" />
+  <node id="N_4_1" x="300.00" y="1200.00" type="priority" />
+  <node id="N_4_2" x="600.00" y="1200.00" type="priority" />
+  <node id="N_4_3" x="900.00" y="1200.00" type="priority" />
+  <node id="N_4_4" x="1200.00" y="1200.00" type="priority" />
+</nodes>

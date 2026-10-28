@@ -1,0 +1,516 @@
+{
+  "config": "configs/bangalore_counts.yaml",
+  "seeds": [
+    601,
+    602,
+    603
+  ],
+  "duration": 3600,
+  "checkpoint_paths": {
+    "mappo": "results/controlled_mappo_7200/final.pt",
+    "rllib": null,
+    "independent": "results/controlled_independent_7200/final"
+  },
+  "episodes": {
+    "fixed_time": [
+      {
+        "seed": 601,
+        "simulated_seconds": 3600.0,
+        "completed": 3755,
+        "remaining": 242,
+        "pending": 0,
+        "avg_waiting_time": 73.88628495339547,
+        "total_waiting_time": 277443.0,
+        "avg_travel_time": 226.21198402130491,
+        "avg_stops": 2.241278295605859,
+        "nonstop_fraction": 0.0,
+        "avg_sampled_queue": 85.55988857938719
+      },
+      {
+        "seed": 602,
+        "simulated_seconds": 3600.0,
+        "completed": 3743,
+        "remaining": 253,
+        "pending": 0,
+        "avg_waiting_time": 74.57066524178467,
+        "total_waiting_time": 279118.0,
+        "avg_travel_time": 226.47795885653218,
+        "avg_stops": 2.2506011220945767,
+        "nonstop_fraction": 0.0,
+        "avg_sampled_queue": 86.59888579387187
+      },
+      {
+        "seed": 603,
+        "simulated_seconds": 3600.0,
+        "completed": 3752,
+        "remaining": 246,
+        "pending": 0,
+        "avg_waiting_time": 75.41871002132196,
+        "total_waiting_time": 282971.0,
+        "avg_travel_time": 227.07569296375266,
+        "avg_stops": 2.269456289978678,
+        "nonstop_fraction": 0.0,
+        "avg_sampled_queue": 87.18941504178272
+      }
+    ],
+    "mappo": [
+      {
+        "seed": 601,
+        "simulated_seconds": 3600.0,
+        "completed": 3830,
+        "remaining": 167,
+        "pending": 0,
+        "avg_waiting_time": 9.100261096605744,
+        "total_waiting_time": 34854.0,
+        "avg_travel_time": 153.44751958224543,
+        "avg_stops": 0.945953002610966,
+        "nonstop_fraction": 0.3143603133159269,
+        "avg_sampled_queue": 9.571030640668523
+      },
+      {
+        "seed": 602,
+        "simulated_seconds": 3600.0,
+        "completed": 3819,
+        "remaining": 177,
+        "pending": 0,
+        "avg_waiting_time": 9.050013092432573,
+        "total_waiting_time": 34562.0,
+        "avg_travel_time": 153.2791306624771,
+        "avg_stops": 0.9507724535218643,
+        "nonstop_fraction": 0.313694684472375,
+        "avg_sampled_queue": 9.674094707520892
+      },
+      {
+        "seed": 603,
+        "simulated_seconds": 3600.0,
+        "completed": 3827,
+        "remaining": 171,
+        "pending": 0,
+        "avg_waiting_time": 9.052782858636007,
+        "total_waiting_time": 34645.0,
+        "avg_travel_time": 152.78442644368957,
+        "avg_stops": 0.9681212437940946,
+        "nonstop_fraction": 0.2968382545074471,
+        "avg_sampled_queue": 9.506963788300835
+      }
+    ],
+    "mappo_no_messages": [
+      {
+        "seed": 601,
+        "simulated_seconds": 3600.0,
+        "completed": 3830,
+        "remaining": 167,
+        "pending": 0,
+        "avg_waiting_time": 9.100261096605744,
+        "total_waiting_time": 34854.0,
+        "avg_travel_time": 153.44751958224543,
+        "avg_stops": 0.945953002610966,
+        "nonstop_fraction": 0.3143603133159269,
+        "avg_sampled_queue": 9.571030640668523
+      },
+      {
+        "seed": 602,
+        "simulated_seconds": 3600.0,
+        "completed": 3819,
+        "remaining": 177,
+        "pending": 0,
+        "avg_waiting_time": 9.050013092432573,
+        "total_waiting_time": 34562.0,
+        "avg_travel_time": 153.2791306624771,
+        "avg_stops": 0.9507724535218643,
+        "nonstop_fraction": 0.313694684472375,
+        "avg_sampled_queue": 9.674094707520892
+      },
+      {
+        "seed": 603,
+        "simulated_seconds": 3600.0,
+        "completed": 3827,
+        "remaining": 171,
+        "pending": 0,
+        "avg_waiting_time": 9.052782858636007,
+        "total_waiting_time": 34645.0,
+        "avg_travel_time": 152.78442644368957,
+        "avg_stops": 0.9681212437940946,
+        "nonstop_fraction": 0.2968382545074471,
+        "avg_sampled_queue": 9.506963788300835
+      }
+    ],
+    "independent_ppo": [
+      {
+        "seed": 601,
+        "simulated_seconds": 3600.0,
+        "completed": 3830,
+        "remaining": 167,
+        "pending": 0,
+        "avg_waiting_time": 9.100261096605744,
+        "total_waiting_time": 34854.0,
+        "avg_travel_time": 153.44751958224543,
+        "avg_stops": 0.945953002610966,
+        "nonstop_fraction": 0.3143603133159269,
+        "avg_sampled_queue": 9.571030640668523
+      },
+      {
+        "seed": 602,
+        "simulated_seconds": 3600.0,
+        "completed": 3819,
+        "remaining": 177,
+        "pending": 0,
+        "avg_waiting_time": 9.050013092432573,
+        "total_waiting_time": 34562.0,
+        "avg_travel_time": 153.2791306624771,
+        "avg_stops": 0.9507724535218643,
+        "nonstop_fraction": 0.313694684472375,
+        "avg_sampled_queue": 9.674094707520892
+      },
+      {
+        "seed": 603,
+        "simulated_seconds": 3600.0,
+        "completed": 3827,
+        "remaining": 171,
+        "pending": 0,
+        "avg_waiting_time": 9.052782858636007,
+        "total_waiting_time": 34645.0,
+        "avg_travel_time": 152.78442644368957,
+        "avg_stops": 0.9681212437940946,
+        "nonstop_fraction": 0.2968382545074471,
+        "avg_sampled_queue": 9.506963788300835
+      }
+    ]
+  },
+  "summary": {
+    "fixed_time": {
+      "avg_waiting_time": {
+        "mean": 74.62522007216735,
+        "std": 0.6267981170685049
+      },
+      "avg_travel_time": {
+        "mean": 226.58854528052993,
+        "std": 0.36117429051683175
+      },
+      "completed": {
+        "mean": 3750.0,
+        "std": 5.0990195135927845
+      },
+      "remaining": {
+        "mean": 247.0,
+        "std": 4.546060565661952
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 86.4493964716806,
+        "std": 0.6735970189951505
+      },
+      "avg_stops": {
+        "mean": 2.253778569226371,
+        "std": 0.011720977474174736
+      },
+      "nonstop_fraction": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    "mappo": {
+      "avg_waiting_time": {
+        "mean": 9.067685682558109,
+        "std": 0.02306203375661082
+      },
+      "avg_travel_time": {
+        "mean": 153.17035889613737,
+        "std": 0.28142091898609173
+      },
+      "completed": {
+        "mean": 3825.3333333333335,
+        "std": 4.642796092394707
+      },
+      "remaining": {
+        "mean": 171.66666666666666,
+        "std": 4.109609335312651
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 9.584029712163415,
+        "std": 0.068847260582792
+      },
+      "avg_stops": {
+        "mean": 0.9549488999756416,
+        "std": 0.009519795446832211
+      },
+      "nonstop_fraction": {
+        "mean": 0.3082977507652496,
+        "std": 0.008107642744196576
+      }
+    },
+    "mappo_no_messages": {
+      "avg_waiting_time": {
+        "mean": 9.067685682558109,
+        "std": 0.02306203375661082
+      },
+      "avg_travel_time": {
+        "mean": 153.17035889613737,
+        "std": 0.28142091898609173
+      },
+      "completed": {
+        "mean": 3825.3333333333335,
+        "std": 4.642796092394707
+      },
+      "remaining": {
+        "mean": 171.66666666666666,
+        "std": 4.109609335312651
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 9.584029712163415,
+        "std": 0.068847260582792
+      },
+      "avg_stops": {
+        "mean": 0.9549488999756416,
+        "std": 0.009519795446832211
+      },
+      "nonstop_fraction": {
+        "mean": 0.3082977507652496,
+        "std": 0.008107642744196576
+      }
+    },
+    "independent_ppo": {
+      "avg_waiting_time": {
+        "mean": 9.067685682558109,
+        "std": 0.02306203375661082
+      },
+      "avg_travel_time": {
+        "mean": 153.17035889613737,
+        "std": 0.28142091898609173
+      },
+      "completed": {
+        "mean": 3825.3333333333335,
+        "std": 4.642796092394707
+      },
+      "remaining": {
+        "mean": 171.66666666666666,
+        "std": 4.109609335312651
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 9.584029712163415,
+        "std": 0.068847260582792
+      },
+      "avg_stops": {
+        "mean": 0.9549488999756416,
+        "std": 0.009519795446832211
+      },
+      "nonstop_fraction": {
+        "mean": 0.3082977507652496,
+        "std": 0.008107642744196576
+      }
+    }
+  },
+  "scenario": {
+    "paths": {
+      "data_dir": "data/coordination",
+      "network_dir": "data/coordination/network",
+      "demand_dir": "data/bangalore/demand",
+      "output_dir": "results/coordination"
+    },
+    "sumo": {
+      "sumo_home": null,
+      "use_gui": false,
+      "step_length": 1,
+      "decision_interval": 10,
+      "seed": 42,
+      "tls_type": "static",
+      "end_time": 3600,
+      "backend": "libsumo"
+    },
+    "network": {
+      "name": "grid_coordination",
+      "grid": {
+        "rows": 3,
+        "cols": 3
+      },
+      "block_length": 300,
+      "lanes_per_direction": 3,
+      "speed_limit": 8.33,
+      "edge_type": "normal",
+      "bidi": true,
+      "boundary_ring": true,
+      "observation_lanes": 3
+    },
+    "demand": {
+      "duration": 3600,
+      "seed": 42,
+      "vehicle_types": {
+        "passenger": {
+          "probability": 1.0,
+          "speed_factor": 1.0
+        }
+      },
+      "flow_rate": 3991.875,
+      "demand_level": "custom",
+      "demand_presets": {
+        "low": 50,
+        "medium": 100,
+        "high": 200
+      },
+      "demand_type": "network_wide",
+      "depart_position": "random_free",
+      "depart_speed": "max",
+      "min_gap": 2.5,
+      "corridor_weights": [
+        6541.0,
+        6541.0,
+        18887.5,
+        18887.5,
+        14245.5,
+        14245.5,
+        599.0,
+        599.0,
+        513.0,
+        513.0,
+        7116.5,
+        7116.5
+      ]
+    },
+    "reward_weights": {
+      "waiting_weight": 0.0,
+      "queue_weight": 1.0,
+      "reward_scale": 0.1,
+      "reward_clip": 10,
+      "mode": "queue_cost"
+    },
+    "signals": {
+      "cycle_length": 90,
+      "yellow_time": 3,
+      "all_red_time": 1,
+      "phases": [
+        {
+          "name": "NS_green",
+          "duration": 41,
+          "signal_state": "GGGrrr"
+        },
+        {
+          "name": "NS_yellow",
+          "duration": 3,
+          "signal_state": "yyyrrr"
+        },
+        {
+          "name": "all_red_1",
+          "duration": 1,
+          "signal_state": "rrrrrr"
+        },
+        {
+          "name": "EW_green",
+          "duration": 41,
+          "signal_state": "rrrGGG"
+        },
+        {
+          "name": "EW_yellow",
+          "duration": 3,
+          "signal_state": "rrryyy"
+        },
+        {
+          "name": "all_red_2",
+          "duration": 1,
+          "signal_state": "rrrrrr"
+        }
+      ]
+    },
+    "ppo": {
+      "learning_rate": 0.0003,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "clip_epsilon": 0.2,
+      "entropy_coefficient": 0.005,
+      "value_loss_coefficient": 0.5,
+      "max_grad_norm": 0.5,
+      "update_epochs": 4,
+      "minibatch_size": 64,
+      "rollout_steps": 360,
+      "target_kl": 0.015,
+      "hidden_size": 64,
+      "seed": 42
+    },
+    "training": {
+      "total_timesteps": 500,
+      "checkpoint_interval": 100,
+      "evaluation_interval": 1000,
+      "output_dir": "results/independent_ppo_nw"
+    },
+    "evaluation": {
+      "num_episodes": 10,
+      "episode_length": 3600,
+      "metrics": [
+        "average_waiting_time",
+        "average_travel_time",
+        "average_queue_length",
+        "throughput",
+        "network_efficiency"
+      ],
+      "save_plots": true,
+      "save_csv": true,
+      "plot_dpi": 150
+    },
+    "data_provenance": {
+      "source_csv": "data\\bangalore\\bilekahalli_2013_counts.csv",
+      "table": 4,
+      "doi": "10.17577/IJERTV2IS70850",
+      "sha256": "98c89dfb0a3e27f28ef86be5feea8ea0b4b1f457ec31ecda6b5dbf5fddf17c2d",
+      "observation_date": "2013-03-06",
+      "transformation": "daily counts / 24; projected movement proportions",
+      "validation_scope": "count-driven synthetic stress test; no measured delay validation"
+    }
+  },
+  "mappo_joint_training_decisions": 7200,
+  "file_sha256": {
+    "configs\\bangalore_counts.yaml": "b91cc86e4008695ace1e00fe2824d0f632d85d647951c150de1f8020fe7ab444",
+    "results\\controlled_mappo_7200\\final.pt": "7250b2d11756d5be81d2431c5247862f7f0b3a8d5fdec7d9ac2c0e6cda9524e0",
+    "results\\controlled_independent_7200\\final\\agent_1_1.pt": "b3d146acb26991299812d380bfa067c5da141dfa2248883ee4970b92ca9450ab",
+    "results\\controlled_independent_7200\\final\\agent_1_2.pt": "6185def1579a6315894bf26b1873ec60f779662f8fe898eea41b84d266c1348a",
+    "results\\controlled_independent_7200\\final\\agent_1_3.pt": "807c8cc9fc7809a8600cfa30db6258c3eb2d2d3398d548cbafe7c0eee0a4b9f0",
+    "results\\controlled_independent_7200\\final\\agent_2_1.pt": "262d193d272789569af497c2c1011119c12530af01630c2104e1676bcdbfcbe4",
+    "results\\controlled_independent_7200\\final\\agent_2_2.pt": "959025441df0eae8d2e0d03ab8c03e7ce846b068360bc3b7757a5f0ab6ac4696",
+    "results\\controlled_independent_7200\\final\\agent_2_3.pt": "77e69209895c0f16908aa1a2c2ead1db15c40e6b765ea531898e2012f61f6466",
+    "results\\controlled_independent_7200\\final\\agent_3_1.pt": "63dcf9c7c429cd64cd663d5e0579e72f03fa6e5967291391b6b6a16042200aa9",
+    "results\\controlled_independent_7200\\final\\agent_3_2.pt": "cbd4841616f1a3b639ef4111b636fbbdd264535760ee99792b3257e25047769b",
+    "results\\controlled_independent_7200\\final\\agent_3_3.pt": "ca726d781e43f78c79512acb613dc86cf153e9d9ec9ef566f7a0d9cbe0ffdae2",
+    "results\\controlled_independent_7200\\final\\metadata.json": "278987059dedb6721c7ea55b855d99b88ffd266af2194fdf7680f4440f4acf6a"
+  },
+  "paired_waiting_reduction_percent": {
+    "fixed_time": {
+      "mean": 87.84796708116927,
+      "per_seed": [
+        87.6834231111419,
+        87.86384288903793,
+        87.996635243328
+      ],
+      "interval_method": "percentile bootstrap over evaluation seeds",
+      "ci95_across_evaluation_seeds": [
+        87.6834231111419,
+        87.996635243328
+      ]
+    },
+    "independent_ppo": {
+      "mean": 0.0,
+      "per_seed": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "interval_method": "percentile bootstrap over evaluation seeds",
+      "ci95_across_evaluation_seeds": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

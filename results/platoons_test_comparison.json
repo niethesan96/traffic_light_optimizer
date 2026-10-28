@@ -1,0 +1,605 @@
+{
+  "config": "configs/platoons.yaml",
+  "seeds": [
+    6001,
+    6002,
+    6003,
+    6004,
+    6005
+  ],
+  "duration": 3600,
+  "checkpoint_paths": {
+    "mappo": "results/platoons_mappo_14400/final.pt",
+    "rllib": null,
+    "independent": "results/platoons_independent_14400/final"
+  },
+  "episodes": {
+    "fixed_time": [
+      {
+        "seed": 6001,
+        "simulated_seconds": 3600.0,
+        "completed": 3745,
+        "remaining": 98,
+        "pending": 0,
+        "avg_waiting_time": 37.96822429906542,
+        "total_waiting_time": 142191.0,
+        "avg_travel_time": 94.70467289719626,
+        "avg_stops": 1.1714285714285715,
+        "nonstop_fraction": 0.07156208277703605,
+        "avg_sampled_queue": 40.28133704735376
+      },
+      {
+        "seed": 6002,
+        "simulated_seconds": 3600.0,
+        "completed": 3740,
+        "remaining": 100,
+        "pending": 0,
+        "avg_waiting_time": 37.712032085561496,
+        "total_waiting_time": 141043.0,
+        "avg_travel_time": 94.32566844919786,
+        "avg_stops": 1.168716577540107,
+        "nonstop_fraction": 0.07192513368983958,
+        "avg_sampled_queue": 39.969359331476326
+      },
+      {
+        "seed": 6003,
+        "simulated_seconds": 3600.0,
+        "completed": 3710,
+        "remaining": 100,
+        "pending": 0,
+        "avg_waiting_time": 37.93234501347709,
+        "total_waiting_time": 140729.0,
+        "avg_travel_time": 94.61239892183288,
+        "avg_stops": 1.169811320754717,
+        "nonstop_fraction": 0.07223719676549865,
+        "avg_sampled_queue": 40.008356545961
+      },
+      {
+        "seed": 6004,
+        "simulated_seconds": 3600.0,
+        "completed": 3650,
+        "remaining": 100,
+        "pending": 0,
+        "avg_waiting_time": 37.144383561643835,
+        "total_waiting_time": 135577.0,
+        "avg_travel_time": 93.53972602739726,
+        "avg_stops": 1.1534246575342466,
+        "nonstop_fraction": 0.07643835616438356,
+        "avg_sampled_queue": 38.4791086350975
+      },
+      {
+        "seed": 6005,
+        "simulated_seconds": 3600.0,
+        "completed": 3683,
+        "remaining": 98,
+        "pending": 0,
+        "avg_waiting_time": 37.58159109421667,
+        "total_waiting_time": 138413.0,
+        "avg_travel_time": 94.28862340483302,
+        "avg_stops": 1.1629106706489276,
+        "nonstop_fraction": 0.07249524843877274,
+        "avg_sampled_queue": 39.28133704735376
+      }
+    ],
+    "mappo": [
+      {
+        "seed": 6001,
+        "simulated_seconds": 3600.0,
+        "completed": 3754,
+        "remaining": 89,
+        "pending": 0,
+        "avg_waiting_time": 17.929941395844434,
+        "total_waiting_time": 67309.0,
+        "avg_travel_time": 79.87053809270112,
+        "avg_stops": 1.8838572189664358,
+        "nonstop_fraction": 0.09110282365476825,
+        "avg_sampled_queue": 17.935933147632312
+      },
+      {
+        "seed": 6002,
+        "simulated_seconds": 3600.0,
+        "completed": 3767,
+        "remaining": 73,
+        "pending": 0,
+        "avg_waiting_time": 17.522431643217413,
+        "total_waiting_time": 66007.0,
+        "avg_travel_time": 77.58322272365277,
+        "avg_stops": 1.788691266259623,
+        "nonstop_fraction": 0.05521635253517388,
+        "avg_sampled_queue": 17.724233983286908
+      },
+      {
+        "seed": 6003,
+        "simulated_seconds": 3600.0,
+        "completed": 3725,
+        "remaining": 85,
+        "pending": 0,
+        "avg_waiting_time": 22.506040268456374,
+        "total_waiting_time": 83835.0,
+        "avg_travel_time": 82.37852348993289,
+        "avg_stops": 1.8958389261744966,
+        "nonstop_fraction": 0.0287248322147651,
+        "avg_sampled_queue": 22.77715877437326
+      },
+      {
+        "seed": 6004,
+        "simulated_seconds": 3600.0,
+        "completed": 3668,
+        "remaining": 82,
+        "pending": 0,
+        "avg_waiting_time": 19.140676117775353,
+        "total_waiting_time": 70208.0,
+        "avg_travel_time": 80.05561613958561,
+        "avg_stops": 1.8642311886586695,
+        "nonstop_fraction": 0.07251908396946564,
+        "avg_sampled_queue": 18.899721448467968
+      },
+      {
+        "seed": 6005,
+        "simulated_seconds": 3600.0,
+        "completed": 3697,
+        "remaining": 84,
+        "pending": 0,
+        "avg_waiting_time": 22.09575331349743,
+        "total_waiting_time": 81688.0,
+        "avg_travel_time": 82.90884500946713,
+        "avg_stops": 1.9142548011901541,
+        "nonstop_fraction": 0.06491750067622397,
+        "avg_sampled_queue": 22.091922005571032
+      }
+    ],
+    "mappo_no_messages": [
+      {
+        "seed": 6001,
+        "simulated_seconds": 3600.0,
+        "completed": 3745,
+        "remaining": 98,
+        "pending": 0,
+        "avg_waiting_time": 32.60854472630174,
+        "total_waiting_time": 122119.0,
+        "avg_travel_time": 94.21975967957276,
+        "avg_stops": 2.2814419225634177,
+        "nonstop_fraction": 0.004806408544726302,
+        "avg_sampled_queue": 33.682451253481894
+      },
+      {
+        "seed": 6002,
+        "simulated_seconds": 3600.0,
+        "completed": 3740,
+        "remaining": 100,
+        "pending": 0,
+        "avg_waiting_time": 32.556417112299464,
+        "total_waiting_time": 121761.0,
+        "avg_travel_time": 94.24946524064171,
+        "avg_stops": 2.281016042780749,
+        "nonstop_fraction": 0.0037433155080213902,
+        "avg_sampled_queue": 33.629526462395546
+      },
+      {
+        "seed": 6003,
+        "simulated_seconds": 3600.0,
+        "completed": 3713,
+        "remaining": 97,
+        "pending": 0,
+        "avg_waiting_time": 32.68165903582009,
+        "total_waiting_time": 121347.0,
+        "avg_travel_time": 94.59897656881228,
+        "avg_stops": 2.3062213843253434,
+        "nonstop_fraction": 0.0032318879612173446,
+        "avg_sampled_queue": 33.428969359331475
+      },
+      {
+        "seed": 6004,
+        "simulated_seconds": 3600.0,
+        "completed": 3659,
+        "remaining": 91,
+        "pending": 0,
+        "avg_waiting_time": 30.200327958458594,
+        "total_waiting_time": 110503.0,
+        "avg_travel_time": 91.1169718502323,
+        "avg_stops": 2.1855698278218094,
+        "nonstop_fraction": 0.01065864990434545,
+        "avg_sampled_queue": 30.28133704735376
+      },
+      {
+        "seed": 6005,
+        "simulated_seconds": 3600.0,
+        "completed": 3683,
+        "remaining": 98,
+        "pending": 0,
+        "avg_waiting_time": 32.818897637795274,
+        "total_waiting_time": 120872.0,
+        "avg_travel_time": 94.68395329894108,
+        "avg_stops": 2.293510724952484,
+        "nonstop_fraction": 0.0024436600597339125,
+        "avg_sampled_queue": 33.23398328690808
+      }
+    ],
+    "independent_ppo": [
+      {
+        "seed": 6001,
+        "simulated_seconds": 3600.0,
+        "completed": 3743,
+        "remaining": 100,
+        "pending": 0,
+        "avg_waiting_time": 35.4271974352124,
+        "total_waiting_time": 132604.0,
+        "avg_travel_time": 97.20571733903286,
+        "avg_stops": 2.3483836494790276,
+        "nonstop_fraction": 0.0,
+        "avg_sampled_queue": 36.65738161559889
+      },
+      {
+        "seed": 6002,
+        "simulated_seconds": 3600.0,
+        "completed": 3740,
+        "remaining": 100,
+        "pending": 0,
+        "avg_waiting_time": 34.97860962566845,
+        "total_waiting_time": 130820.0,
+        "avg_travel_time": 96.66791443850268,
+        "avg_stops": 2.329144385026738,
+        "nonstop_fraction": 0.0,
+        "avg_sampled_queue": 36.183844011142064
+      },
+      {
+        "seed": 6003,
+        "simulated_seconds": 3600.0,
+        "completed": 3709,
+        "remaining": 101,
+        "pending": 0,
+        "avg_waiting_time": 35.530601240226474,
+        "total_waiting_time": 131783.0,
+        "avg_travel_time": 97.48503639795094,
+        "avg_stops": 2.3726071717444057,
+        "nonstop_fraction": 0.0,
+        "avg_sampled_queue": 36.523676880222844
+      },
+      {
+        "seed": 6004,
+        "simulated_seconds": 3600.0,
+        "completed": 3648,
+        "remaining": 102,
+        "pending": 0,
+        "avg_waiting_time": 34.91447368421053,
+        "total_waiting_time": 127368.0,
+        "avg_travel_time": 96.38020833333333,
+        "avg_stops": 2.330043859649123,
+        "nonstop_fraction": 0.0,
+        "avg_sampled_queue": 35.211699164345404
+      },
+      {
+        "seed": 6005,
+        "simulated_seconds": 3600.0,
+        "completed": 3676,
+        "remaining": 105,
+        "pending": 0,
+        "avg_waiting_time": 35.42301414581066,
+        "total_waiting_time": 130215.0,
+        "avg_travel_time": 97.42491838955387,
+        "avg_stops": 2.3465723612622416,
+        "nonstop_fraction": 0.0,
+        "avg_sampled_queue": 35.97214484679666
+      }
+    ]
+  },
+  "summary": {
+    "fixed_time": {
+      "avg_waiting_time": {
+        "mean": 37.667715210792906,
+        "std": 0.29785634404841044
+      },
+      "avg_travel_time": {
+        "mean": 94.29421794009144,
+        "std": 0.4098758076838863
+      },
+      "completed": {
+        "mean": 3705.6,
+        "std": 35.657257325823586
+      },
+      "remaining": {
+        "mean": 99.2,
+        "std": 0.9797958971132712
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 39.60389972144847,
+        "std": 0.6519615090846874
+      },
+      "avg_stops": {
+        "mean": 1.165258359581314,
+        "std": 0.006577360999657626
+      },
+      "nonstop_fraction": {
+        "mean": 0.07293160356710612,
+        "std": 0.0017809261181156689
+      }
+    },
+    "mappo": {
+      "avg_waiting_time": {
+        "mean": 19.8389685477582,
+        "std": 2.083491744972143
+      },
+      "avg_travel_time": {
+        "mean": 80.5593490910679,
+        "std": 1.919117619989151
+      },
+      "completed": {
+        "mean": 3722.2,
+        "std": 36.328501207729445
+      },
+      "remaining": {
+        "mean": 82.6,
+        "std": 5.314132102234569
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 19.885793871866298,
+        "std": 2.1294895708495454
+      },
+      "avg_stops": {
+        "mean": 1.8693746802498759,
+        "std": 0.04349849260496459
+      },
+      "nonstop_fraction": {
+        "mean": 0.06249611861007938,
+        "std": 0.020582328722082037
+      }
+    },
+    "mappo_no_messages": {
+      "avg_waiting_time": {
+        "mean": 32.17316929413503,
+        "std": 0.9903595815683183
+      },
+      "avg_travel_time": {
+        "mean": 93.77382532764003,
+        "std": 1.3411315124505947
+      },
+      "completed": {
+        "mean": 3708.0,
+        "std": 32.99696955782455
+      },
+      "remaining": {
+        "mean": 96.8,
+        "std": 3.059411708155671
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 32.85125348189415,
+        "std": 1.2947051237158933
+      },
+      "avg_stops": {
+        "mean": 2.2695519804887603,
+        "std": 0.0429987535339265
+      },
+      "nonstop_fraction": {
+        "mean": 0.00497678439560888,
+        "std": 0.002942633227377644
+      }
+    },
+    "independent_ppo": {
+      "avg_waiting_time": {
+        "mean": 35.2547792262257,
+        "std": 0.25541586503722735
+      },
+      "avg_travel_time": {
+        "mean": 97.03275897967472,
+        "std": 0.4352452975449187
+      },
+      "completed": {
+        "mean": 3703.2,
+        "std": 36.766288907095316
+      },
+      "remaining": {
+        "mean": 101.6,
+        "std": 1.8547236990991407
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 36.10974930362117,
+        "std": 0.5103246520926049
+      },
+      "avg_stops": {
+        "mean": 2.3453502854323074,
+        "std": 0.015814869562636738
+      },
+      "nonstop_fraction": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    }
+  },
+  "scenario": {
+    "paths": {
+      "data_dir": "data/platoons",
+      "network_dir": "data/platoons/network",
+      "demand_dir": "data/platoons/demand",
+      "output_dir": "results/coordination"
+    },
+    "sumo": {
+      "sumo_home": null,
+      "use_gui": false,
+      "step_length": 1,
+      "decision_interval": 10,
+      "seed": 42,
+      "tls_type": "static",
+      "end_time": 3600,
+      "backend": "libsumo"
+    },
+    "network": {
+      "name": "grid_platoons",
+      "grid": {
+        "rows": 3,
+        "cols": 3
+      },
+      "block_length": 100,
+      "lanes_per_direction": 1,
+      "speed_limit": 8.33,
+      "edge_type": "normal",
+      "bidi": true,
+      "boundary_ring": true,
+      "observation_lanes": 1
+    },
+    "demand": {
+      "duration": 3600,
+      "seed": 42,
+      "vehicle_types": {
+        "passenger": {
+          "probability": 1.0,
+          "speed_factor": 1.0
+        }
+      },
+      "flow_rate": 3600,
+      "demand_level": "custom",
+      "demand_presets": {
+        "low": 50,
+        "medium": 100,
+        "high": 200
+      },
+      "demand_type": "network_wide",
+      "depart_position": "random_free",
+      "depart_speed": "max",
+      "min_gap": 2.5,
+      "platoon_period": 120,
+      "platoon_on_time": 40
+    },
+    "reward_weights": {
+      "waiting_weight": 0.0,
+      "queue_weight": 1.0,
+      "reward_scale": 0.05,
+      "reward_clip": 10,
+      "mode": "queue_cost"
+    },
+    "signals": {
+      "cycle_length": 90,
+      "yellow_time": 3,
+      "all_red_time": 1,
+      "phases": [
+        {
+          "name": "NS_green",
+          "duration": 41,
+          "signal_state": "GGGrrr"
+        },
+        {
+          "name": "NS_yellow",
+          "duration": 3,
+          "signal_state": "yyyrrr"
+        },
+        {
+          "name": "all_red_1",
+          "duration": 1,
+          "signal_state": "rrrrrr"
+        },
+        {
+          "name": "EW_green",
+          "duration": 41,
+          "signal_state": "rrrGGG"
+        },
+        {
+          "name": "EW_yellow",
+          "duration": 3,
+          "signal_state": "rrryyy"
+        },
+        {
+          "name": "all_red_2",
+          "duration": 1,
+          "signal_state": "rrrrrr"
+        }
+      ]
+    },
+    "ppo": {
+      "learning_rate": 0.0003,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "clip_epsilon": 0.2,
+      "entropy_coefficient": 0.02,
+      "value_loss_coefficient": 0.5,
+      "max_grad_norm": 0.5,
+      "update_epochs": 6,
+      "minibatch_size": 64,
+      "rollout_steps": 360,
+      "target_kl": 0.015,
+      "hidden_size": 64,
+      "seed": 42
+    },
+    "training": {
+      "total_timesteps": 500,
+      "checkpoint_interval": 100,
+      "evaluation_interval": 1000,
+      "output_dir": "results/independent_ppo_nw"
+    },
+    "evaluation": {
+      "num_episodes": 10,
+      "episode_length": 3600,
+      "metrics": [
+        "average_waiting_time",
+        "average_travel_time",
+        "average_queue_length",
+        "throughput",
+        "network_efficiency"
+      ],
+      "save_plots": true,
+      "save_csv": true,
+      "plot_dpi": 150
+    }
+  },
+  "mappo_joint_training_decisions": 14400,
+  "file_sha256": {
+    "configs\\platoons.yaml": "08ffa59808b2f085fc986290ac3fb6d9826c1761cc26206c38a33e388a44a737",
+    "results\\platoons_mappo_14400\\final.pt": "22473e1c32db9261f423dabe456c2842371e43d7ea8c1b1f5d87d005a7147ab0",
+    "results\\platoons_independent_14400\\final\\agent_1_1.pt": "0d4f1d060c363c0269210a010a7ce17ed4463de65eddfc535002a6fae7c87084",
+    "results\\platoons_independent_14400\\final\\agent_1_2.pt": "caee377319c129dce2ace7cef23bdb20ba7b575fa3686374a897bdc81a94d805",
+    "results\\platoons_independent_14400\\final\\agent_1_3.pt": "b4b5b04b4cf4317a8de8660ef9990d93db80c359d9fb574215427bf89ea31580",
+    "results\\platoons_independent_14400\\final\\agent_2_1.pt": "e7a3b4ff426b66df4d2c8f6a532ccde77d4a1f11fba32c0390bf318e4e512b16",
+    "results\\platoons_independent_14400\\final\\agent_2_2.pt": "38c59a2f01056ca1574477a24ca6afbf7595bc0c95cac3a46a243208f1f885fd",
+    "results\\platoons_independent_14400\\final\\agent_2_3.pt": "76dfa4761cf4cdcd7b237c6ae86c80ef2e0e375b06e29ae9c7257396ba45597b",
+    "results\\platoons_independent_14400\\final\\agent_3_1.pt": "d018077a6f97b1ceb683620d1394aeaf90363c66b2a9b78339b58ed8835c74a6",
+    "results\\platoons_independent_14400\\final\\agent_3_2.pt": "692139a46fbcc78eb9c68b56c1389da1f9362ef3a3386708ad08731eb57e397f",
+    "results\\platoons_independent_14400\\final\\agent_3_3.pt": "945e7337a199c1ecfa999fc9475c882951dd74b8f44c356260933d3643247cba",
+    "results\\platoons_independent_14400\\final\\metadata.json": "66aeab782180ba11737983e8ded0942034a88849e2f46e7eaf8edf34eb8bc485"
+  },
+  "paired_waiting_reduction_percent": {
+    "fixed_time": {
+      "mean": 47.33121416993079,
+      "per_seed": [
+        52.77645524158533,
+        53.53623054980884,
+        40.66794378132926,
+        48.46952814276755,
+        41.205913134162955
+      ],
+      "interval_method": "percentile bootstrap over evaluation seeds",
+      "ci95_across_evaluation_seeds": [
+        42.4434483947504,
+        52.21897994511117
+      ]
+    },
+    "independent_ppo": {
+      "mean": 43.75069847389621,
+      "per_seed": [
+        49.38933166069974,
+        49.905294033302916,
+        36.65730530060426,
+        45.1783913717382,
+        37.623170003135925
+      ],
+      "interval_method": "percentile bootstrap over evaluation seeds",
+      "ci95_across_evaluation_seeds": [
+        38.74786839584372,
+        48.7535285519487
+      ]
+    }
+  }
+}

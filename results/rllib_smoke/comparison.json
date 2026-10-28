@@ -1,0 +1,310 @@
+{
+  "config": "configs/cooperative.yaml",
+  "seeds": [
+    105
+  ],
+  "duration": 300,
+  "checkpoint_paths": {
+    "mappo": null,
+    "rllib": "results/rllib_smoke/module",
+    "independent": null
+  },
+  "episodes": {
+    "fixed_time": [
+      {
+        "seed": 105,
+        "simulated_seconds": 300.0,
+        "completed": 55,
+        "remaining": 118,
+        "pending": 0,
+        "avg_waiting_time": 43.14545454545455,
+        "total_waiting_time": 2373.0,
+        "avg_travel_time": 182.07272727272726,
+        "avg_stops": 1.7454545454545454,
+        "nonstop_fraction": 0.0,
+        "avg_sampled_queue": 24.137931034482758
+      }
+    ],
+    "mappo": [
+      {
+        "seed": 105,
+        "simulated_seconds": 300.0,
+        "completed": 82,
+        "remaining": 91,
+        "pending": 0,
+        "avg_waiting_time": 15.158536585365853,
+        "total_waiting_time": 1243.0,
+        "avg_travel_time": 155.8780487804878,
+        "avg_stops": 1.3048780487804879,
+        "nonstop_fraction": 0.2073170731707317,
+        "avg_sampled_queue": 7.344827586206897
+      }
+    ],
+    "mappo_no_messages": [
+      {
+        "seed": 105,
+        "simulated_seconds": 300.0,
+        "completed": 82,
+        "remaining": 91,
+        "pending": 0,
+        "avg_waiting_time": 15.487804878048781,
+        "total_waiting_time": 1270.0,
+        "avg_travel_time": 156.3780487804878,
+        "avg_stops": 1.3780487804878048,
+        "nonstop_fraction": 0.17073170731707318,
+        "avg_sampled_queue": 8.137931034482758
+      }
+    ]
+  },
+  "summary": {
+    "fixed_time": {
+      "avg_waiting_time": {
+        "mean": 43.14545454545455,
+        "std": 0.0
+      },
+      "avg_travel_time": {
+        "mean": 182.07272727272726,
+        "std": 0.0
+      },
+      "completed": {
+        "mean": 55.0,
+        "std": 0.0
+      },
+      "remaining": {
+        "mean": 118.0,
+        "std": 0.0
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 24.137931034482758,
+        "std": 0.0
+      },
+      "avg_stops": {
+        "mean": 1.7454545454545454,
+        "std": 0.0
+      },
+      "nonstop_fraction": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    "mappo": {
+      "avg_waiting_time": {
+        "mean": 15.158536585365853,
+        "std": 0.0
+      },
+      "avg_travel_time": {
+        "mean": 155.8780487804878,
+        "std": 0.0
+      },
+      "completed": {
+        "mean": 82.0,
+        "std": 0.0
+      },
+      "remaining": {
+        "mean": 91.0,
+        "std": 0.0
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 7.344827586206897,
+        "std": 0.0
+      },
+      "avg_stops": {
+        "mean": 1.3048780487804879,
+        "std": 0.0
+      },
+      "nonstop_fraction": {
+        "mean": 0.2073170731707317,
+        "std": 0.0
+      }
+    },
+    "mappo_no_messages": {
+      "avg_waiting_time": {
+        "mean": 15.487804878048781,
+        "std": 0.0
+      },
+      "avg_travel_time": {
+        "mean": 156.3780487804878,
+        "std": 0.0
+      },
+      "completed": {
+        "mean": 82.0,
+        "std": 0.0
+      },
+      "remaining": {
+        "mean": 91.0,
+        "std": 0.0
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 8.137931034482758,
+        "std": 0.0
+      },
+      "avg_stops": {
+        "mean": 1.3780487804878048,
+        "std": 0.0
+      },
+      "nonstop_fraction": {
+        "mean": 0.17073170731707318,
+        "std": 0.0
+      }
+    }
+  },
+  "scenario": {
+    "paths": {
+      "data_dir": "data/coordination",
+      "network_dir": "data/coordination/network",
+      "demand_dir": "data/coordination/demand",
+      "output_dir": "results/coordination"
+    },
+    "sumo": {
+      "sumo_home": null,
+      "use_gui": false,
+      "step_length": 1,
+      "decision_interval": 10,
+      "seed": 42,
+      "tls_type": "static",
+      "end_time": 3600,
+      "backend": "libsumo"
+    },
+    "network": {
+      "name": "grid_coordination",
+      "grid": {
+        "rows": 3,
+        "cols": 3
+      },
+      "block_length": 300,
+      "lanes_per_direction": 3,
+      "speed_limit": 8.33,
+      "edge_type": "normal",
+      "bidi": true,
+      "boundary_ring": true,
+      "observation_lanes": 3
+    },
+    "demand": {
+      "duration": 3600,
+      "seed": 42,
+      "vehicle_types": {
+        "passenger": {
+          "probability": 1.0,
+          "speed_factor": 1.0
+        }
+      },
+      "flow_rate": 2000,
+      "demand_level": "custom",
+      "demand_presets": {
+        "low": 50,
+        "medium": 100,
+        "high": 200
+      },
+      "demand_type": "network_wide",
+      "depart_position": "random_free",
+      "depart_speed": "max",
+      "min_gap": 2.5
+    },
+    "reward_weights": {
+      "waiting_weight": 0.0,
+      "queue_weight": 1.0,
+      "reward_scale": 0.1,
+      "reward_clip": 10,
+      "mode": "queue_cost"
+    },
+    "signals": {
+      "cycle_length": 90,
+      "yellow_time": 3,
+      "all_red_time": 1,
+      "phases": [
+        {
+          "name": "NS_green",
+          "duration": 41,
+          "signal_state": "GGGrrr"
+        },
+        {
+          "name": "NS_yellow",
+          "duration": 3,
+          "signal_state": "yyyrrr"
+        },
+        {
+          "name": "all_red_1",
+          "duration": 1,
+          "signal_state": "rrrrrr"
+        },
+        {
+          "name": "EW_green",
+          "duration": 41,
+          "signal_state": "rrrGGG"
+        },
+        {
+          "name": "EW_yellow",
+          "duration": 3,
+          "signal_state": "rrryyy"
+        },
+        {
+          "name": "all_red_2",
+          "duration": 1,
+          "signal_state": "rrrrrr"
+        }
+      ]
+    },
+    "ppo": {
+      "learning_rate": 0.0003,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "clip_epsilon": 0.2,
+      "entropy_coefficient": 0.005,
+      "value_loss_coefficient": 0.5,
+      "max_grad_norm": 0.5,
+      "update_epochs": 4,
+      "minibatch_size": 64,
+      "rollout_steps": 360,
+      "target_kl": 0.015,
+      "hidden_size": 64,
+      "seed": 42
+    },
+    "training": {
+      "total_timesteps": 500,
+      "checkpoint_interval": 100,
+      "evaluation_interval": 1000,
+      "output_dir": "results/independent_ppo_nw"
+    },
+    "evaluation": {
+      "num_episodes": 10,
+      "episode_length": 3600,
+      "metrics": [
+        "average_waiting_time",
+        "average_travel_time",
+        "average_queue_length",
+        "throughput",
+        "network_efficiency"
+      ],
+      "save_plots": true,
+      "save_csv": true,
+      "plot_dpi": 150
+    }
+  },
+  "mappo_joint_training_decisions": 0,
+  "file_sha256": {
+    "configs\\cooperative.yaml": "d97926aa6ac1de089780aaa9891633fa50b5e89112b60548f64543faa61658a3",
+    "results\\rllib_smoke\\module\\class_and_ctor_args.pkl": "105ce8be44107588133c16e645fab6c16ba62c02c9de467ac81ed7759e58be82",
+    "results\\rllib_smoke\\module\\metadata.json": "bdac05a41d118ae108ae21823a62aae9699f03bc5f6674bd8946f4fba949adea",
+    "results\\rllib_smoke\\module\\module_state.pkl": "df52547dd978d17e03ac29f48596035f2bd0807135175ba89dba995e1773a8ba"
+  },
+  "paired_waiting_reduction_percent": {
+    "fixed_time": {
+      "mean": 64.8664343786295,
+      "per_seed": [
+        64.8664343786295
+      ]
+    }
+  }
+}

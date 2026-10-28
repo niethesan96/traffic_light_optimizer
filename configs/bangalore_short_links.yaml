@@ -1,0 +1,125 @@
+paths:
+  data_dir: data/platoons
+  network_dir: data/platoons/network
+  demand_dir: data/bangalore/short_link_demand
+  output_dir: results/coordination
+sumo:
+  sumo_home: null
+  use_gui: false
+  step_length: 1
+  decision_interval: 10
+  seed: 42
+  tls_type: static
+  end_time: 3600
+  backend: libsumo
+network:
+  name: grid_platoons
+  grid:
+    rows: 3
+    cols: 3
+  block_length: 100
+  lanes_per_direction: 1
+  speed_limit: 8.33
+  edge_type: normal
+  bidi: true
+  boundary_ring: true
+  observation_lanes: 1
+demand:
+  duration: 3600
+  seed: 42
+  vehicle_types:
+    passenger:
+      probability: 1.0
+      speed_factor: 1.0
+  flow_rate: 3991.875
+  demand_level: custom
+  demand_presets:
+    low: 50
+    medium: 100
+    high: 200
+  demand_type: network_wide
+  depart_position: random_free
+  depart_speed: max
+  min_gap: 2.5
+  corridor_weights:
+  - 6541.0
+  - 6541.0
+  - 18887.5
+  - 18887.5
+  - 14245.5
+  - 14245.5
+  - 599.0
+  - 599.0
+  - 513.0
+  - 513.0
+  - 7116.5
+  - 7116.5
+  demand_jitter: 0.0
+reward_weights:
+  waiting_weight: 0.0
+  queue_weight: 1.0
+  reward_scale: 0.05
+  reward_clip: 10
+  mode: queue_cost
+signals:
+  cycle_length: 90
+  yellow_time: 3
+  all_red_time: 1
+  phases:
+  - name: NS_green
+    duration: 41
+    signal_state: GGGrrr
+  - name: NS_yellow
+    duration: 3
+    signal_state: yyyrrr
+  - name: all_red_1
+    duration: 1
+    signal_state: rrrrrr
+  - name: EW_green
+    duration: 41
+    signal_state: rrrGGG
+  - name: EW_yellow
+    duration: 3
+    signal_state: rrryyy
+  - name: all_red_2
+    duration: 1
+    signal_state: rrrrrr
+ppo:
+  learning_rate: 0.0003
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_epsilon: 0.2
+  entropy_coefficient: 0.02
+  value_loss_coefficient: 0.5
+  max_grad_norm: 0.5
+  update_epochs: 6
+  minibatch_size: 64
+  rollout_steps: 360
+  target_kl: 0.015
+  hidden_size: 64
+  seed: 42
+training:
+  total_timesteps: 500
+  checkpoint_interval: 100
+  evaluation_interval: 1000
+  output_dir: results/independent_ppo_nw
+evaluation:
+  num_episodes: 10
+  episode_length: 3600
+  metrics:
+  - average_waiting_time
+  - average_travel_time
+  - average_queue_length
+  - throughput
+  - network_efficiency
+  save_plots: true
+  save_csv: true
+  plot_dpi: 150
+data_provenance:
+  source_csv: data\bangalore\bilekahalli_2013_counts.csv
+  table: 4
+  doi: 10.17577/IJERTV2IS70850
+  sha256: 98c89dfb0a3e27f28ef86be5feea8ea0b4b1f457ec31ecda6b5dbf5fddf17c2d
+  observation_date: '2013-03-06'
+  transformation: daily counts / 24; projected movement proportions; no demand perturbation
+  validation_scope: count-driven synthetic stress test; no measured delay validation

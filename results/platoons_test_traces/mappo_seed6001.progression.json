@@ -1,0 +1,131 @@
+{
+  "trace": "results\\platoons_test_traces\\mappo_seed6001.csv",
+  "resolution_seconds": 1.0,
+  "nominal_travel_seconds": 12.004801920768307,
+  "sampled_lag_seconds": 12.0,
+  "resolution_adequate": true,
+  "nominal_green_transfer_probability": 0.4875971963640346,
+  "links": [
+    {
+      "origin": "agent_1_1",
+      "destination": "agent_1_2",
+      "coverage": 0.8107213765718068
+    },
+    {
+      "origin": "agent_1_1",
+      "destination": "agent_2_1",
+      "coverage": 0.529296875
+    },
+    {
+      "origin": "agent_1_2",
+      "destination": "agent_1_1",
+      "coverage": 0.06587615283267458
+    },
+    {
+      "origin": "agent_1_2",
+      "destination": "agent_1_3",
+      "coverage": 0.5237154150197628
+    },
+    {
+      "origin": "agent_1_2",
+      "destination": "agent_2_2",
+      "coverage": 0.006565988181221274
+    },
+    {
+      "origin": "agent_1_3",
+      "destination": "agent_1_2",
+      "coverage": 0.5155320555188367
+    },
+    {
+      "origin": "agent_1_3",
+      "destination": "agent_2_3",
+      "coverage": 0.02612671456564337
+    },
+    {
+      "origin": "agent_2_1",
+      "destination": "agent_2_2",
+      "coverage": 0.4910773298083278
+    },
+    {
+      "origin": "agent_2_1",
+      "destination": "agent_1_1",
+      "coverage": 0.4983670803396473
+    },
+    {
+      "origin": "agent_2_1",
+      "destination": "agent_3_1",
+      "coverage": 0.496407576747224
+    },
+    {
+      "origin": "agent_2_2",
+      "destination": "agent_2_1",
+      "coverage": 0.5497382198952879
+    },
+    {
+      "origin": "agent_2_2",
+      "destination": "agent_2_3",
+      "coverage": 0.5274869109947644
+    },
+    {
+      "origin": "agent_2_2",
+      "destination": "agent_1_2",
+      "coverage": 0.875743555849306
+    },
+    {
+      "origin": "agent_2_2",
+      "destination": "agent_3_2",
+      "coverage": 0.5320555188367482
+    },
+    {
+      "origin": "agent_2_3",
+      "destination": "agent_2_2",
+      "coverage": 0.5181758096497026
+    },
+    {
+      "origin": "agent_2_3",
+      "destination": "agent_1_3",
+      "coverage": 0.8654474199869366
+    },
+    {
+      "origin": "agent_2_3",
+      "destination": "agent_3_3",
+      "coverage": 0.5166557805355977
+    },
+    {
+      "origin": "agent_3_1",
+      "destination": "agent_3_2",
+      "coverage": 0.3965631196298744
+    },
+    {
+      "origin": "agent_3_1",
+      "destination": "agent_2_1",
+      "coverage": 0.37883736120182887
+    },
+    {
+      "origin": "agent_3_2",
+      "destination": "agent_3_1",
+      "coverage": 0.47587574355584933
+    },
+    {
+      "origin": "agent_3_2",
+      "destination": "agent_3_3",
+      "coverage": 0.5241242564441507
+    },
+    {
+      "origin": "agent_3_2",
+      "destination": "agent_2_2",
+      "coverage": 0.5225342913128674
+    },
+    {
+      "origin": "agent_3_3",
+      "destination": "agent_3_2",
+      "coverage": 0.5235602094240838
+    },
+    {
+      "origin": "agent_3_3",
+      "destination": "agent_2_3",
+      "coverage": 0.536021150033047
+    }
+  ],
+  "interpretation": "Signal alignment diagnostic, not vehicle-weighted green arrivals or causal proof"
+}

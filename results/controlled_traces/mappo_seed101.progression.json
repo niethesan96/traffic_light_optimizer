@@ -1,0 +1,10 @@
+{
+  "trace": "results/controlled_traces/mappo_seed101.csv",
+  "resolution_seconds": 10.0,
+  "nominal_travel_seconds": 36.014405762304925,
+  "sampled_lag_seconds": 40.0,
+  "resolution_adequate": false,
+  "nominal_green_transfer_probability": null,
+  "links": [],
+  "interpretation": "Insufficient temporal resolution: rerun evaluation with physics-step signal traces"
+}

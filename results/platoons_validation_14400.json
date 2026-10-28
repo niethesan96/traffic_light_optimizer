@@ -1,0 +1,440 @@
+{
+  "config": "configs/platoons.yaml",
+  "seeds": [
+    5001,
+    5002
+  ],
+  "duration": 3600,
+  "checkpoint_paths": {
+    "mappo": "results/platoons_mappo_14400/final.pt",
+    "rllib": null,
+    "independent": "results/platoons_independent_14400/final"
+  },
+  "episodes": {
+    "fixed_time": [
+      {
+        "seed": 5001,
+        "simulated_seconds": 3600.0,
+        "completed": 3715,
+        "remaining": 96,
+        "pending": 0,
+        "avg_waiting_time": 37.598115746971736,
+        "total_waiting_time": 139677.0,
+        "avg_travel_time": 94.21426648721399,
+        "avg_stops": 1.1647375504710633,
+        "nonstop_fraction": 0.07429340511440108,
+        "avg_sampled_queue": 39.551532033426184
+      },
+      {
+        "seed": 5002,
+        "simulated_seconds": 3600.0,
+        "completed": 3659,
+        "remaining": 91,
+        "pending": 0,
+        "avg_waiting_time": 37.317026509975406,
+        "total_waiting_time": 136543.0,
+        "avg_travel_time": 93.62558075977043,
+        "avg_stops": 1.1574200601257174,
+        "nonstop_fraction": 0.0705110685979776,
+        "avg_sampled_queue": 38.60445682451253
+      }
+    ],
+    "mappo": [
+      {
+        "seed": 5001,
+        "simulated_seconds": 3600.0,
+        "completed": 3727,
+        "remaining": 84,
+        "pending": 0,
+        "avg_waiting_time": 18.716393882479206,
+        "total_waiting_time": 69756.0,
+        "avg_travel_time": 79.27850818352563,
+        "avg_stops": 1.8451837939361417,
+        "nonstop_fraction": 0.055004024684733026,
+        "avg_sampled_queue": 18.793871866295266
+      },
+      {
+        "seed": 5002,
+        "simulated_seconds": 3600.0,
+        "completed": 3665,
+        "remaining": 85,
+        "pending": 0,
+        "avg_waiting_time": 19.240927694406547,
+        "total_waiting_time": 70518.0,
+        "avg_travel_time": 80.47148703956344,
+        "avg_stops": 1.869849931787176,
+        "nonstop_fraction": 0.07557980900409277,
+        "avg_sampled_queue": 18.963788300835656
+      }
+    ],
+    "mappo_no_messages": [
+      {
+        "seed": 5001,
+        "simulated_seconds": 3600.0,
+        "completed": 3719,
+        "remaining": 92,
+        "pending": 0,
+        "avg_waiting_time": 31.688088195751547,
+        "total_waiting_time": 117848.0,
+        "avg_travel_time": 92.97176660392579,
+        "avg_stops": 2.2368916375369725,
+        "nonstop_fraction": 0.0032266738370529714,
+        "avg_sampled_queue": 32.52924791086351
+      },
+      {
+        "seed": 5002,
+        "simulated_seconds": 3600.0,
+        "completed": 3656,
+        "remaining": 94,
+        "pending": 0,
+        "avg_waiting_time": 32.538566739606125,
+        "total_waiting_time": 118961.0,
+        "avg_travel_time": 94.24316192560175,
+        "avg_stops": 2.2798140043763677,
+        "nonstop_fraction": 0.0035557986870897156,
+        "avg_sampled_queue": 32.84679665738162
+      }
+    ],
+    "independent_ppo": [
+      {
+        "seed": 5001,
+        "simulated_seconds": 3600.0,
+        "completed": 3710,
+        "remaining": 101,
+        "pending": 0,
+        "avg_waiting_time": 34.47708894878706,
+        "total_waiting_time": 127910.0,
+        "avg_travel_time": 95.79541778975741,
+        "avg_stops": 2.3056603773584907,
+        "nonstop_fraction": 0.0,
+        "avg_sampled_queue": 35.44289693593315
+      },
+      {
+        "seed": 5002,
+        "simulated_seconds": 3600.0,
+        "completed": 3653,
+        "remaining": 97,
+        "pending": 0,
+        "avg_waiting_time": 34.90090336709554,
+        "total_waiting_time": 127493.0,
+        "avg_travel_time": 96.47194087051739,
+        "avg_stops": 2.3293183684642758,
+        "nonstop_fraction": 0.0,
+        "avg_sampled_queue": 35.34540389972145
+      }
+    ]
+  },
+  "summary": {
+    "fixed_time": {
+      "avg_waiting_time": {
+        "mean": 37.457571128473575,
+        "std": 0.1405446184981649
+      },
+      "avg_travel_time": {
+        "mean": 93.91992362349221,
+        "std": 0.29434286372178065
+      },
+      "completed": {
+        "mean": 3687.0,
+        "std": 28.0
+      },
+      "remaining": {
+        "mean": 93.5,
+        "std": 2.5
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 39.07799442896936,
+        "std": 0.47353760445682624
+      },
+      "avg_stops": {
+        "mean": 1.1610788052983905,
+        "std": 0.0036587451726729503
+      },
+      "nonstop_fraction": {
+        "mean": 0.07240223685618934,
+        "std": 0.0018911682582117423
+      }
+    },
+    "mappo": {
+      "avg_waiting_time": {
+        "mean": 18.978660788442877,
+        "std": 0.26226690596367064
+      },
+      "avg_travel_time": {
+        "mean": 79.87499761154453,
+        "std": 0.5964894280189057
+      },
+      "completed": {
+        "mean": 3696.0,
+        "std": 31.0
+      },
+      "remaining": {
+        "mean": 84.5,
+        "std": 0.5
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 18.87883008356546,
+        "std": 0.08495821727019504
+      },
+      "avg_stops": {
+        "mean": 1.857516862861659,
+        "std": 0.01233306892551711
+      },
+      "nonstop_fraction": {
+        "mean": 0.06529191684441289,
+        "std": 0.01028789215967987
+      }
+    },
+    "mappo_no_messages": {
+      "avg_waiting_time": {
+        "mean": 32.113327467678836,
+        "std": 0.42523927192728905
+      },
+      "avg_travel_time": {
+        "mean": 93.60746426476376,
+        "std": 0.6356976608379838
+      },
+      "completed": {
+        "mean": 3687.5,
+        "std": 31.5
+      },
+      "remaining": {
+        "mean": 93.0,
+        "std": 1.0
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 32.68802228412257,
+        "std": 0.1587743732590532
+      },
+      "avg_stops": {
+        "mean": 2.25835282095667,
+        "std": 0.021461183419697605
+      },
+      "nonstop_fraction": {
+        "mean": 0.0033912362620713435,
+        "std": 0.0001645624250183721
+      }
+    },
+    "independent_ppo": {
+      "avg_waiting_time": {
+        "mean": 34.688996157941304,
+        "std": 0.2119072091542371
+      },
+      "avg_travel_time": {
+        "mean": 96.1336793301374,
+        "std": 0.3382615403799889
+      },
+      "completed": {
+        "mean": 3681.5,
+        "std": 28.5
+      },
+      "remaining": {
+        "mean": 99.0,
+        "std": 2.0
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 35.3941504178273,
+        "std": 0.04874651810585107
+      },
+      "avg_stops": {
+        "mean": 2.3174893729113832,
+        "std": 0.011828995552892518
+      },
+      "nonstop_fraction": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    }
+  },
+  "scenario": {
+    "paths": {
+      "data_dir": "data/platoons",
+      "network_dir": "data/platoons/network",
+      "demand_dir": "data/platoons/demand",
+      "output_dir": "results/coordination"
+    },
+    "sumo": {
+      "sumo_home": null,
+      "use_gui": false,
+      "step_length": 1,
+      "decision_interval": 10,
+      "seed": 42,
+      "tls_type": "static",
+      "end_time": 3600,
+      "backend": "libsumo"
+    },
+    "network": {
+      "name": "grid_platoons",
+      "grid": {
+        "rows": 3,
+        "cols": 3
+      },
+      "block_length": 100,
+      "lanes_per_direction": 1,
+      "speed_limit": 8.33,
+      "edge_type": "normal",
+      "bidi": true,
+      "boundary_ring": true,
+      "observation_lanes": 1
+    },
+    "demand": {
+      "duration": 3600,
+      "seed": 42,
+      "vehicle_types": {
+        "passenger": {
+          "probability": 1.0,
+          "speed_factor": 1.0
+        }
+      },
+      "flow_rate": 3600,
+      "demand_level": "custom",
+      "demand_presets": {
+        "low": 50,
+        "medium": 100,
+        "high": 200
+      },
+      "demand_type": "network_wide",
+      "depart_position": "random_free",
+      "depart_speed": "max",
+      "min_gap": 2.5,
+      "platoon_period": 120,
+      "platoon_on_time": 40
+    },
+    "reward_weights": {
+      "waiting_weight": 0.0,
+      "queue_weight": 1.0,
+      "reward_scale": 0.05,
+      "reward_clip": 10,
+      "mode": "queue_cost"
+    },
+    "signals": {
+      "cycle_length": 90,
+      "yellow_time": 3,
+      "all_red_time": 1,
+      "phases": [
+        {
+          "name": "NS_green",
+          "duration": 41,
+          "signal_state": "GGGrrr"
+        },
+        {
+          "name": "NS_yellow",
+          "duration": 3,
+          "signal_state": "yyyrrr"
+        },
+        {
+          "name": "all_red_1",
+          "duration": 1,
+          "signal_state": "rrrrrr"
+        },
+        {
+          "name": "EW_green",
+          "duration": 41,
+          "signal_state": "rrrGGG"
+        },
+        {
+          "name": "EW_yellow",
+          "duration": 3,
+          "signal_state": "rrryyy"
+        },
+        {
+          "name": "all_red_2",
+          "duration": 1,
+          "signal_state": "rrrrrr"
+        }
+      ]
+    },
+    "ppo": {
+      "learning_rate": 0.0003,
+      "gamma": 0.99,
+      "gae_lambda": 0.95,
+      "clip_epsilon": 0.2,
+      "entropy_coefficient": 0.02,
+      "value_loss_coefficient": 0.5,
+      "max_grad_norm": 0.5,
+      "update_epochs": 6,
+      "minibatch_size": 64,
+      "rollout_steps": 360,
+      "target_kl": 0.015,
+      "hidden_size": 64,
+      "seed": 42
+    },
+    "training": {
+      "total_timesteps": 500,
+      "checkpoint_interval": 100,
+      "evaluation_interval": 1000,
+      "output_dir": "results/independent_ppo_nw"
+    },
+    "evaluation": {
+      "num_episodes": 10,
+      "episode_length": 3600,
+      "metrics": [
+        "average_waiting_time",
+        "average_travel_time",
+        "average_queue_length",
+        "throughput",
+        "network_efficiency"
+      ],
+      "save_plots": true,
+      "save_csv": true,
+      "plot_dpi": 150
+    }
+  },
+  "mappo_joint_training_decisions": 14400,
+  "file_sha256": {
+    "configs\\platoons.yaml": "08ffa59808b2f085fc986290ac3fb6d9826c1761cc26206c38a33e388a44a737",
+    "results\\platoons_mappo_14400\\final.pt": "22473e1c32db9261f423dabe456c2842371e43d7ea8c1b1f5d87d005a7147ab0",
+    "results\\platoons_independent_14400\\final\\agent_1_1.pt": "0d4f1d060c363c0269210a010a7ce17ed4463de65eddfc535002a6fae7c87084",
+    "results\\platoons_independent_14400\\final\\agent_1_2.pt": "caee377319c129dce2ace7cef23bdb20ba7b575fa3686374a897bdc81a94d805",
+    "results\\platoons_independent_14400\\final\\agent_1_3.pt": "b4b5b04b4cf4317a8de8660ef9990d93db80c359d9fb574215427bf89ea31580",
+    "results\\platoons_independent_14400\\final\\agent_2_1.pt": "e7a3b4ff426b66df4d2c8f6a532ccde77d4a1f11fba32c0390bf318e4e512b16",
+    "results\\platoons_independent_14400\\final\\agent_2_2.pt": "38c59a2f01056ca1574477a24ca6afbf7595bc0c95cac3a46a243208f1f885fd",
+    "results\\platoons_independent_14400\\final\\agent_2_3.pt": "76dfa4761cf4cdcd7b237c6ae86c80ef2e0e375b06e29ae9c7257396ba45597b",
+    "results\\platoons_independent_14400\\final\\agent_3_1.pt": "d018077a6f97b1ceb683620d1394aeaf90363c66b2a9b78339b58ed8835c74a6",
+    "results\\platoons_independent_14400\\final\\agent_3_2.pt": "692139a46fbcc78eb9c68b56c1389da1f9362ef3a3386708ad08731eb57e397f",
+    "results\\platoons_independent_14400\\final\\agent_3_3.pt": "945e7337a199c1ecfa999fc9475c882951dd74b8f44c356260933d3643247cba",
+    "results\\platoons_independent_14400\\final\\metadata.json": "66aeab782180ba11737983e8ded0942034a88849e2f46e7eaf8edf34eb8bc485"
+  },
+  "paired_waiting_reduction_percent": {
+    "fixed_time": {
+      "mean": 49.329570836975215,
+      "per_seed": [
+        50.21986205788337,
+        48.43927961606706
+      ],
+      "interval_method": "percentile bootstrap over evaluation seeds",
+      "ci95_across_evaluation_seeds": [
+        48.43927961606706,
+        50.21986205788337
+      ]
+    },
+    "independent_ppo": {
+      "mean": 45.29168048448652,
+      "per_seed": [
+        45.713531933392346,
+        44.869829035580686
+      ],
+      "interval_method": "percentile bootstrap over evaluation seeds",
+      "ci95_across_evaluation_seeds": [
+        44.869829035580686,
+        45.713531933392346
+      ]
+    }
+  }
+}

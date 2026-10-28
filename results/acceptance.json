@@ -1,0 +1,14 @@
+{
+  "target_percent": 35,
+  "achieved_percent": 43.75069847389621,
+  "all_five_seeds_exceed_target": true,
+  "interval95_over_evaluation_seeds": [
+    38.74786839584372,
+    48.7535285519487
+  ],
+  "throughput_not_reduced": true,
+  "scope": "Frozen policy seed 42, synthetic short-link platoon scenario, held-out seeds 6001-6005",
+  "rllib_integration_verified": true,
+  "bangalore_count_benchmark_completed": true,
+  "real_city_delay_validation": false
+}

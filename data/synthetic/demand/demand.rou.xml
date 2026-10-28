@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<routes>
+  <vType id="passenger" accel="2.6" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="50" speedFactor="1.0" speedDev="0.0" />
+  <flow id="flow_0" type="passenger" from="E_1_3_to_1_2" vehsPerHour="300" begin="12" end="3600" departPos="random" departSpeed="random" />
+  <flow id="flow_1" type="passenger" from="E_3_1_to_2_1" vehsPerHour="300" begin="52" end="3600" departPos="random" departSpeed="random" />
+  <flow id="flow_2" type="passenger" from="E_1_0_to_1_1" vehsPerHour="300" begin="57" end="3600" departPos="random" departSpeed="random" />
+  <flow id="flow_3" type="passenger" from="E_0_2_to_1_2" vehsPerHour="300" begin="71" end="3600" departPos="random" departSpeed="random" />
+  <flow id="flow_4" type="passenger" from="E_0_1_to_1_1" vehsPerHour="300" begin="114" end="3600" departPos="random" departSpeed="random" />
+  <flow id="flow_5" type="passenger" from="E_2_3_to_2_2" vehsPerHour="300" begin="125" end="3600" departPos="random" departSpeed="random" />
+  <flow id="flow_6" type="passenger" from="E_2_0_to_2_1" vehsPerHour="300" begin="140" end="3600" departPos="random" departSpeed="random" />
+  <flow id="flow_7" type="passenger" from="E_3_2_to_2_2" vehsPerHour="300" begin="279" end="3600" departPos="random" departSpeed="random" />
+</routes>

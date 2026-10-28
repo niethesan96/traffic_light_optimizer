@@ -1,0 +1,75 @@
+{
+  "daily_count": 95805,
+  "normalized_hourly_target": 3991.875,
+  "observations": {
+    "fixed_time": [
+      {
+        "seed": 701,
+        "planned_accounted": 3996,
+        "relative_difference_percent": 0.10333489901361848
+      },
+      {
+        "seed": 702,
+        "planned_accounted": 3996,
+        "relative_difference_percent": 0.10333489901361848
+      },
+      {
+        "seed": 703,
+        "planned_accounted": 3996,
+        "relative_difference_percent": 0.10333489901361848
+      }
+    ],
+    "mappo": [
+      {
+        "seed": 701,
+        "planned_accounted": 3996,
+        "relative_difference_percent": 0.10333489901361848
+      },
+      {
+        "seed": 702,
+        "planned_accounted": 3996,
+        "relative_difference_percent": 0.10333489901361848
+      },
+      {
+        "seed": 703,
+        "planned_accounted": 3996,
+        "relative_difference_percent": 0.10333489901361848
+      }
+    ],
+    "mappo_no_messages": [
+      {
+        "seed": 701,
+        "planned_accounted": 3996,
+        "relative_difference_percent": 0.10333489901361848
+      },
+      {
+        "seed": 702,
+        "planned_accounted": 3996,
+        "relative_difference_percent": 0.10333489901361848
+      },
+      {
+        "seed": 703,
+        "planned_accounted": 3996,
+        "relative_difference_percent": 0.10333489901361848
+      }
+    ],
+    "independent_ppo": [
+      {
+        "seed": 701,
+        "planned_accounted": 3996,
+        "relative_difference_percent": 0.10333489901361848
+      },
+      {
+        "seed": 702,
+        "planned_accounted": 3996,
+        "relative_difference_percent": 0.10333489901361848
+      },
+      {
+        "seed": 703,
+        "planned_accounted": 3996,
+        "relative_difference_percent": 0.10333489901361848
+      }
+    ]
+  },
+  "scope": "Input demand accounting check; not independent validation of traffic dynamics"
+}

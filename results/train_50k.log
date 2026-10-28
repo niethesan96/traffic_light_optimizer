@@ -1,0 +1,2 @@
+F:\traffic_network\envs\single_intersection.py:90: UserWarning: Call to deprecated function getAllProgramLogics, use getCompleteRedYellowGreenDefinition instead.
+  program = traci.trafficlight.getCompleteRedYellowGreenDefinition(state.tls_id)

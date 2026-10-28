@@ -1,0 +1,151 @@
+# =============================================================================
+# Network-Wide Traffic Scenario
+# =============================================================================
+# This config provides traffic that traverses the entire 3x3 grid,
+# ensuring all 9 intersections experience meaningful traffic.
+#
+# Key differences from default.yaml (Phase 2 boundary-only):
+#   - demand_type: "network_wide" (OD-based routes)
+#   - flow_rate: 1000 base (swept 1000/2000/3000 for the baseline comparison)
+#   - depart_position: "random_free" + depart_speed: "max" (no collision teleports)
+#   - 3 lanes per direction (short entry edges need capacity headroom)
+#   - simulation step_length: 1s; agents still decide every 10s
+#   - Network name: "grid_3x3_nw" (separate files from baseline)
+#
+# The original Phase 2 baseline is preserved in configs/default.yaml.
+# =============================================================================
+
+# --- Project paths ---
+paths:
+  data_dir: "data/network_wide"
+  network_dir: "data/network_wide/network"
+  demand_dir: "data/network_wide/demand"
+  output_dir: "output"
+
+# --- SUMO Configuration ---
+sumo:
+  sumo_home: null
+  use_gui: false
+  # 1s simulation steps give SUMO accurate car-following physics (avoids the
+  # tau warning at 10s steps); agents still act only every decision_interval.
+  step_length: 1
+  decision_interval: 10
+  seed: 42
+  tls_type: "static"
+  end_time: 3600
+
+# --- Network Configuration (same as baseline) ---
+network:
+  name: "grid_3x3_nw"
+  grid:
+    rows: 3
+    cols: 3
+  block_length: 300
+  # 3 lanes per direction for network-wide scenario (avoids single-lane congestion)
+  lanes_per_direction: 3
+  speed_limit: 8.33
+  edge_type: "normal"
+  bidi: true
+
+# --- Traffic Demand Configuration ---
+demand:
+  duration: 3600
+  seed: 42
+  vehicle_types:
+    passenger:
+      probability: 1.0
+      speed_factor: 1.0
+  # Total network demand (veh/hr), divided evenly across the 36 OD pairs;
+  # every flow spans the full simulation (begin=0, end=duration). Swept at
+  # 1000/2000/3000 via build_network.py --flow-rate; 1000 kept as base
+  # pending selection of the final scenario demand.
+  flow_rate: 1000
+  demand_level: "custom"
+  demand_presets:
+    low: 50
+    medium: 100
+    high: 200
+  # Use boundary-only demand (same as Phase 2) but with adjusted rate
+  # boundary: single-OD entry-only flows
+  # network_wide: multi-OD flows covering all intersections
+  demand_type: "network_wide"
+  # random_free: insert only at a free random position (prevents overlap
+  # collisions); max depart speed prevents rear-end catch-up on entry edges.
+  depart_position: "random_free"
+  depart_speed: "max"
+  min_gap: 2.5
+
+# --- Reward shaping ---
+reward_weights:
+  waiting_weight: 1.0
+  queue_weight: 1.0
+  # reward_scale applied AFTER the weighted sum: 0.02 ≈ 1/(std of the
+  # measured per-step network_wide reward ≈ 50). reward_clip is applied in
+  # SCALED units (±10 after scaling).
+  reward_scale: 0.02
+  reward_clip: 10.0
+
+# --- Signal Plans (same as baseline) ---
+signals:
+  cycle_length: 90
+  yellow_time: 3
+  all_red_time: 1
+  phases:
+    - name: "NS_green"
+      duration: 41
+      signal_state: "GGGrrr"
+    - name: "NS_yellow"
+      duration: 3
+      signal_state: "yyyrrr"
+    - name: "all_red_1"
+      duration: 1
+      signal_state: "rrrrrr"
+    - name: "EW_green"
+      duration: 41
+      signal_state: "rrrGGG"
+    - name: "EW_yellow"
+      duration: 3
+      signal_state: "rrryyy"
+    - name: "all_red_2"
+      duration: 1
+      signal_state: "rrrrrr"
+
+# --- PPO ---
+# Single source of truth for rollout/minibatch/epochs/lr; CLI flags on
+# scripts/train_independent_ppo.py override these values.
+ppo:
+  learning_rate: 0.0003
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_epsilon: 0.2
+  entropy_coefficient: 0.01
+  value_loss_coefficient: 0.5
+  max_grad_norm: 0.5
+  update_epochs: 8
+  minibatch_size: 64
+  # One full 3600 s episode per update at the 10 s decision interval.
+  rollout_steps: 360
+  target_kl: 0.015
+  hidden_size: 64
+  seed: 42
+
+# --- Training ---
+training:
+  total_timesteps: 500
+  checkpoint_interval: 100
+  evaluation_interval: 1000
+  output_dir: "results/independent_ppo_nw"
+
+# --- Evaluation ---
+evaluation:
+  num_episodes: 10
+  episode_length: 3600
+  metrics:
+    - "average_waiting_time"
+    - "average_travel_time"
+    - "average_queue_length"
+    - "throughput"
+    - "network_efficiency"
+  save_plots: true
+  save_csv: true
+  plot_dpi: 150

@@ -1,0 +1,28 @@
+[
+  {
+    "global_step": 72,
+    "update_count": 1,
+    "episodes_completed": 1,
+    "mean_return_since_last_log": -0.14,
+    "mean_episode_reward": -0.14,
+    "mean_episode_length": 5.0,
+    "policy_loss": 1.479768090777927e-08,
+    "value_loss": 0.02619007643726137,
+    "entropy": 0.6931466460227966,
+    "approx_kl": 0.0,
+    "clip_fraction": 0.0,
+    "explained_variance": -20.49294411773372,
+    "mean_step_reward": {
+      "agent_1_1": -0.065,
+      "agent_1_2": -0.030000000000000002,
+      "agent_1_3": -0.05000000000000002,
+      "agent_2_1": 0.0,
+      "agent_2_2": -0.0075,
+      "agent_2_3": -0.0075,
+      "agent_3_1": -0.11250000000000002,
+      "agent_3_2": 0.0,
+      "agent_3_3": -0.03
+    },
+    "wall_time_s": 1.9210896492004395
+  }
+]

@@ -1,0 +1,177 @@
+# =============================================================================
+# Multi-Agent Traffic Network Optimization - Default Configuration
+# =============================================================================
+#
+# DEPRECATED FOR RL: this config drives the Phase-2 boundary-only demand on
+# data/synthetic, where the episode reward is provably action-independent and
+# junction N_3_3 compiles with a single-phase (always-green) program. All
+# training/evaluation for RL should use configs/network_wide.yaml; this file
+# is kept only as the fixed-time Phase-2 baseline reference.
+# =============================================================================
+
+# --- Project paths ---
+paths:
+  data_dir: "data/synthetic"
+  network_dir: "data/synthetic/network"
+  demand_dir: "data/synthetic/demand"
+  output_dir: "output"
+
+# --- SUMO Configuration ---
+sumo:
+  # SUMO home directory (auto-detected if using eclipse-sumo pip package)
+  sumo_home: null
+  # Use sumo-gui for visualization, sumo for headless
+  use_gui: false
+  # Step length in seconds
+  step_length: 10
+  # Random seed for SUMO simulation
+  seed: 42
+  # Traffic light type: "actuated" | "static"
+  tls_type: "static"
+  # Simulation end time in seconds
+  end_time: 3600
+
+# --- Network Configuration ---
+network:
+  grid:
+    rows: 3
+    cols: 3
+  # Distance between intersections in meters
+  block_length: 300
+  # Number of lanes per direction (per side of road)
+  lanes_per_direction: 1
+  # Speed limit in m/s (30 km/h typical urban)
+  speed_limit: 8.33
+  # Edge type
+  edge_type: "normal"
+  # Enable bidi edges (two-way traffic)
+  bidi: true
+
+# --- Traffic Demand Configuration ---
+demand:
+  # Total simulation duration in seconds
+  duration: 3600
+  # Random seed for demand generation
+  seed: 42
+  # Vehicle types
+  vehicle_types:
+    passenger:
+      probability: 1.0
+      speed_factor: 1.0
+  # Flow rates: vehicles per hour per edge
+  flow_rate: 300
+  # Demand level: "low" | "medium" | "high" | "custom"
+  # low: 100 vph, medium: 300 vph, high: 600 vph
+  demand_level: "medium"
+  demand_presets:
+    low: 100
+    medium: 300
+    high: 600
+  # Demand type: "boundary" | "network_wide"
+  # boundary: entry-only flows from grid boundary (Phase 2 default)
+  # network_wide: OD-based flows covering all intersections
+  demand_type: "boundary"
+  # Depart position: "random" | "free" | "base"
+  depart_position: "random"
+  # Depart speed: "random" | "max" | "free" | "now"
+  depart_speed: "random"
+  # Minimum gap between vehicles
+  min_gap: 2.5
+
+# --- Signal Plans (Fixed-Time Baseline) ---
+signals:
+  # Cycle length in seconds
+  cycle_length: 90
+  # Yellow time in seconds
+  yellow_time: 3
+  # All-red time in seconds
+  all_red_time: 1
+  # Phase definitions (per intersection)
+  # Green time = (cycle - 2*yellow - 2*all_red) / 2 = (90 - 6 - 2) / 2 = 41s
+  phases:
+    - name: "NS_green"
+      duration: 41
+      signal_state: "GGGrrr"
+    - name: "NS_yellow"
+      duration: 3
+      signal_state: "yyyrrr"
+    - name: "all_red_1"
+      duration: 1
+      signal_state: "rrrrrr"
+    - name: "EW_green"
+      duration: 41
+      signal_state: "rrrGGG"
+    - name: "EW_yellow"
+      duration: 3
+      signal_state: "rrryyy"
+    - name: "all_red_2"
+      duration: 1
+      signal_state: "rrrrrr"
+
+# --- Independent PPO (Phase 4) ---
+ppo:
+  # Learning rate for Adam optimizer
+  # Chosen conservatively: 3e-4 is the standard PPO default from the original paper.
+  # Small enough to avoid instability, large enough to learn in reasonable time.
+  learning_rate: 0.0003
+  # Discount factor: how much to weight future rewards vs immediate
+  # 0.99 is standard for episodic tasks with ~360 steps
+  gamma: 0.99
+  # GAE lambda: trade-off between bias and variance in advantage estimation
+  # 0.95 is the standard choice from the GAE paper
+  gae_lambda: 0.95
+  # PPO clip epsilon: clips the probability ratio to [1-eps, 1+eps]
+  # 0.2 is the default from the PPO paper
+  clip_epsilon: 0.2
+  # Entropy bonus coefficient: encourages exploration
+  # 0.01 is small enough not to distract from the main objective
+  entropy_coefficient: 0.01
+  # Value loss coefficient: scales the MSE value loss relative to policy loss
+  # 0.5 is standard; keeps value and policy gradients balanced
+  value_loss_coefficient: 0.5
+  # Maximum gradient norm: clips gradients to prevent instability
+  max_grad_norm: 0.5
+  # Number of PPO epochs per update: 4 is standard from the PPO paper
+  update_epochs: 4
+  # Minibatch size for PPO updates
+  minibatch_size: 64
+  # Number of environment steps per rollout before PPO update
+  rollout_steps: 128
+  # Target KL divergence for early stopping (None to disable)
+  # 0.015 is conservative; stops if policy changes too much in one update
+  target_kl: 0.015
+  # Hidden layer size for actor-critic MLP
+  # 64 is appropriate for 18-dim input — ~2,300 params per agent
+  hidden_size: 64
+  # Random seed
+  seed: 42
+
+# --- Training Configuration ---
+training:
+  # Total environment timesteps to train for
+  # 500 is a smoke-test default; use 100k+ for meaningful training
+  total_timesteps: 500
+  # Save checkpoint every N timesteps
+  checkpoint_interval: 100
+  # Evaluate every N timesteps (reserved for future use)
+  evaluation_interval: 1000
+  # Output directory for checkpoints and logs
+  output_dir: "results/independent_ppo"
+
+# --- Evaluation Configuration ---
+evaluation:
+  # Number of evaluation episodes
+  num_episodes: 10
+  # Episode length in seconds
+  episode_length: 3600
+  # Metrics to compute
+  metrics:
+    - "average_waiting_time"
+    - "average_travel_time"
+    - "average_queue_length"
+    - "throughput"
+    - "network_efficiency"
+  # Output format
+  save_plots: true
+  save_csv: true
+  plot_dpi: 150

@@ -1,0 +1,11 @@
+{
+  "source_csv": "data\\bangalore\\bilekahalli_2013_counts.csv",
+  "table": 4,
+  "doi": "10.17577/IJERTV2IS70850",
+  "sha256": "98c89dfb0a3e27f28ef86be5feea8ea0b4b1f457ec31ecda6b5dbf5fddf17c2d",
+  "observation_date": "2013-03-06",
+  "transformation": "daily counts / 24; projected movement proportions",
+  "validation_scope": "count-driven synthetic stress test; no measured delay validation",
+  "daily_total": 95805,
+  "average_hourly_network_target": 3991.875
+}

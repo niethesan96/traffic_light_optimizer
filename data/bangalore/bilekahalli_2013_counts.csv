@@ -1,0 +1,7 @@
+observation_date,junction,origin,destination,movement,vehicles_24h
+2013-03-06,Bilekahalli,Dairy Circle,Bilekahalli,left,13082
+2013-03-06,Bilekahalli,Dairy Circle,Bannerghatta,straight,37775
+2013-03-06,Bilekahalli,Bannerghatta,Dairy Circle,straight,28491
+2013-03-06,Bilekahalli,Bannerghatta,Bilekahalli,right,1198
+2013-03-06,Bilekahalli,Bilekahalli,Bannerghatta,left,1026
+2013-03-06,Bilekahalli,Bilekahalli,Dairy Circle,right,14233

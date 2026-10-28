@@ -1,0 +1,137 @@
+{
+  "config": "configs/coordination.yaml",
+  "seeds": [
+    101
+  ],
+  "duration": 300,
+  "checkpoint_paths": {
+    "mappo": "results/mappo_coordination_10k/latest.pt",
+    "independent": null
+  },
+  "episodes": {
+    "fixed_time": [
+      {
+        "seed": 101,
+        "completed": 55,
+        "remaining": 111,
+        "pending": 0,
+        "avg_waiting_time": 40.89090909090909,
+        "total_waiting_time": 2249.0,
+        "avg_travel_time": 173.07272727272726,
+        "avg_sampled_queue": 19.655172413793103
+      }
+    ],
+    "mappo": [
+      {
+        "seed": 101,
+        "completed": 84,
+        "remaining": 82,
+        "pending": 0,
+        "avg_waiting_time": 8.845238095238095,
+        "total_waiting_time": 743.0,
+        "avg_travel_time": 145.35714285714286,
+        "avg_sampled_queue": 4.379310344827586
+      }
+    ],
+    "mappo_no_messages": [
+      {
+        "seed": 101,
+        "completed": 84,
+        "remaining": 82,
+        "pending": 0,
+        "avg_waiting_time": 8.845238095238095,
+        "total_waiting_time": 743.0,
+        "avg_travel_time": 145.35714285714286,
+        "avg_sampled_queue": 4.379310344827586
+      }
+    ]
+  },
+  "summary": {
+    "fixed_time": {
+      "avg_waiting_time": {
+        "mean": 40.89090909090909,
+        "std": 0.0
+      },
+      "avg_travel_time": {
+        "mean": 173.07272727272726,
+        "std": 0.0
+      },
+      "completed": {
+        "mean": 55.0,
+        "std": 0.0
+      },
+      "remaining": {
+        "mean": 111.0,
+        "std": 0.0
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 19.655172413793103,
+        "std": 0.0
+      }
+    },
+    "mappo": {
+      "avg_waiting_time": {
+        "mean": 8.845238095238095,
+        "std": 0.0
+      },
+      "avg_travel_time": {
+        "mean": 145.35714285714286,
+        "std": 0.0
+      },
+      "completed": {
+        "mean": 84.0,
+        "std": 0.0
+      },
+      "remaining": {
+        "mean": 82.0,
+        "std": 0.0
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 4.379310344827586,
+        "std": 0.0
+      }
+    },
+    "mappo_no_messages": {
+      "avg_waiting_time": {
+        "mean": 8.845238095238095,
+        "std": 0.0
+      },
+      "avg_travel_time": {
+        "mean": 145.35714285714286,
+        "std": 0.0
+      },
+      "completed": {
+        "mean": 84.0,
+        "std": 0.0
+      },
+      "remaining": {
+        "mean": 82.0,
+        "std": 0.0
+      },
+      "pending": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "avg_sampled_queue": {
+        "mean": 4.379310344827586,
+        "std": 0.0
+      }
+    }
+  },
+  "paired_waiting_reduction_percent": {
+    "fixed_time": {
+      "mean": 78.36869296406869,
+      "per_seed": [
+        78.36869296406869
+      ]
+    }
+  }
+}
